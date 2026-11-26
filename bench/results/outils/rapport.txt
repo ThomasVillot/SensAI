@@ -1,0 +1,126 @@
+==============================================================================
+BENCHMARK MODELES OLLAMA — SensAI
+==============================================================================
+Date          : 2026-09-24T12:21:36+00:00
+Machine       : thomas-ASUS-TUF-Dash-F15-FX517ZE-TUF517ZE  (Linux-7.0.0-31-generic-x86_64-with-glibc2.39)
+Python        : 3.12.3
+Repetitions   : 1 par cas de test
+Mode          : triage (14 cas)
+Modeles       : granite3.1-moe:latest, mistral:latest, qwen2.5:7b, llama3.1:8b, mistral-nemo:12b, qwen3:8b (nothink), qwen3:8b
+
+------------------------------------------------------------------------------
+CLASSEMENT GENERAL
+------------------------------------------------------------------------------
+1. qwen3:8b (nothink)     83.0 /100   #################...
+2. qwen3:8b               74.9 /100   ###############.....
+3. mistral-nemo:12b       72.8 /100   ###############.....
+4. qwen2.5:7b             72.0 /100   ##############......
+5. mistral:latest         69.2 /100   ##############......
+6. granite3.1-moe:latest  65.0 /100   #############.......
+7. llama3.1:8b            64.2 /100   #############.......
+
+Ponderation : outils 30%, vitesse 25%, json 15%, raisonnement 15%, consignes 8%, francais 7%
+
+------------------------------------------------------------------------------
+SCORES PAR CATEGORIE
+------------------------------------------------------------------------------
+Categorie         granite3.1-mo  mistral:lates     qwen2.5:7b    llama3.1:8b  mistral-nemo:  qwen3:8b (not       qwen3:8b
+-------------------------------------------------------------------------------------------------------------------------
+Tool-calling             33.3          100.0 *         88.9           33.3           77.8          100.0 *         88.9  
+Vitesse                 100.0 *         36.7           31.2           36.9           17.7           31.8           12.9  
+JSON structure          100.0 *        100.0 *        100.0 *        100.0 *        100.0 *        100.0 *        100.0 *
+Raisonnement              0.0            0.0           50.0          100.0 *        100.0 *        100.0 *        100.0 *
+Consignes               100.0 *        100.0 *        100.0 *        100.0 *        100.0 *        100.0 *        100.0 *
+Francais                100.0 *        100.0 *        100.0 *        100.0 *        100.0 *        100.0 *        100.0 *
+Stabilite                 n/a            n/a            n/a            n/a            n/a            n/a            n/a  
+
+* = meilleur de la categorie
+
+------------------------------------------------------------------------------
+PERFORMANCES MESUREES
+------------------------------------------------------------------------------
+Mesure                      granite3.1-mo  mistral:lates     qwen2.5:7b    llama3.1:8b  mistral-nemo:  qwen3:8b (not       qwen3:8b
+-----------------------------------------------------------------------------------------------------------------------------------
+Debit median (tok/s)               158.94            8.9            8.0           7.55           3.91           6.91           6.79
+Latence mediane (s)                  0.92           5.87           7.08           5.46          11.68           6.48          34.33
+Latence p90 (s)                      3.28          43.49          26.13          12.37          35.07          28.38         148.55
+Latence max (s)                      3.81          45.14          59.03          45.37          82.81          50.08          300.1
+Appels mesures                         14             14             14             14             14             14             14
+Caracteres de reflexion                 0              0              0              0              0              0           8396
+Outils en tool_calls natif              0              6              6              5              4              6              5
+Outils bricoles en texte                0              0              0              4              1              0              0
+
+------------------------------------------------------------------------------
+PROJECTION SUR LA BOUCLE ReAct (feature A1)
+------------------------------------------------------------------------------
+A1 enchaine 3 a 5 appels modele pour une seule question utilisateur.
+
+Modele                    1 tour    3 appels    5 appels   verdict
+--------------------------------------------------------------------------
+qwen3:8b (nothink)          6.5s       19.4s       32.4s   jouable, a surveiller
+qwen3:8b                   34.3s      103.0s      171.6s   INJOUABLE en demo
+mistral-nemo:12b           11.7s       35.0s       58.4s   INJOUABLE en demo
+qwen2.5:7b                  7.1s       21.2s       35.4s   jouable, a surveiller
+mistral:latest              5.9s       17.6s       29.4s   jouable, a surveiller
+granite3.1-moe:latest       0.9s        2.8s        4.6s   confortable
+llama3.1:8b                 5.5s       16.4s       27.3s   jouable, a surveiller
+
+------------------------------------------------------------------------------
+CAS ECHOUES OU INSTABLES
+------------------------------------------------------------------------------
+
+granite3.1-moe:latest  (8 cas non parfaits)
+   [KO] T-simple        0/1  attendu weather, obtenu None
+   [KO] T-meteo-1       0/1  attendu weather, obtenu None
+   [KO] T-vol-1         0/1  attendu flights_search, obtenu None
+   [KO] T-act-1         0/1  attendu activity_search, obtenu None
+   [KO] T-budget        0/1  attendu budget, obtenu None
+   [KO] M-deux          0/1  outils obtenus : aucun
+   [KO] R-budget        0/1  attendu 220, nombres trouves : [75.0, 120.0, 65.0, 4.0, 4.0]
+   [KO] R-contrainte    0/1  attendu 2, nombres trouves : [3.0]
+
+mistral:latest  (2 cas non parfaits)
+   [KO] R-budget        0/1  attendu 220, nombres trouves : [115.0]
+   [KO] R-contrainte    0/1  attendu 2, nombres trouves : [3.0, 3.0]
+
+qwen2.5:7b  (2 cas non parfaits)
+   [KO] M-deux          0/1  outils obtenus : ['weather']
+   [KO] R-budget        0/1  attendu 220, nombres trouves : [390.0]
+
+llama3.1:8b  (6 cas non parfaits)
+   [KO] T-simple        0/1  attendu weather, obtenu Obtenir la meteo et les previsions d
+   [KO] T-meteo-1       0/1  attendu weather, obtenu Obtenir la meteo et les previsions d
+   [KO] T-none-1        0/1  a appele activity_search alors qu'aucun outil n'etait attend
+   [KO] T-none-3        0/1  a appele Obtenir la meteo et les previsions d'une ville a un
+   [KO] T-absent        0/1  a appele github_commit alors qu'aucun outil n'etait attendu
+   [KO] M-deux          0/1  outils obtenus : ["Obtenir la meteo et les previsions d'une 
+
+mistral-nemo:12b  (2 cas non parfaits)
+   [KO] T-meteo-1       0/1  attendu weather, obtenu None
+   [KO] M-deux          0/1  outils obtenus : ['weather']
+
+qwen3:8b (nothink)  (0 cas non parfaits)
+   tout est passe sur tous les essais
+
+qwen3:8b  (1 cas non parfaits)
+   [KO] T-meteo-1       0/1  ReadTimeout: HTTPConnectionPool(host='localhost', port=11434
+
+==============================================================================
+LECTURE
+==============================================================================
+Meilleur score global      : qwen3:8b (nothink)
+Meilleur en tool-calling   : mistral:latest  (100.0/100)
+Le plus rapide             : granite3.1-moe:latest  (0.92s par tour)
+
+Rappel des seuils du projet :
+  - tool-calling > 80/100 sinon T1 est compromis (GO/NO-GO du 02/10)
+  - une question avec boucle A1 doit rester sous ~20s en demo
+
+Un modele a 0 en tool_calls natif a quand meme pu choisir le bon
+outil : il l'a ecrit en JSON dans le texte. C'est jouable, mais T1
+devra embarquer un parseur de repli, et le format varie d'un modele
+a l'autre. A poids egal, preferer un modele qui remplit tool_calls.
+
+Ces chiffres sont valables pour CETTE machine uniquement.
+Refais tourner le benchmark sur chaque poste du groupe.
+==============================================================================

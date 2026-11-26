@@ -1,0 +1,107 @@
+==============================================================================
+BENCH REPONSE FINALE — vitesse et langue — SensAI
+==============================================================================
+Date          : 2026-09-24T14:32:39+00:00
+Machine       : thomas-ASUS-TUF-Dash-F15-FX517ZE-TUF517ZE  (Linux-7.0.0-31-generic-x86_64-with-glibc2.39)
+Repetitions   : 1 par cas, temperature 0.0, plafond 700 tokens
+Cas           : 8 (6 en francais, 2 en EN/ES)
+
+------------------------------------------------------------------------------
+CLASSEMENT  (langue francaise d'abord, puis delai avant le premier mot)
+------------------------------------------------------------------------------
+Modele                  Langue  EN/ES  1er mot  Complete   Debit  Tokens  Charg.
+                            FR          median    median   tok/s  median        
+------------------------------------------------------------------------------
+qwen3:4b-instruct         100%   100%     0.5s     14.3s   20.67   285.0    6.4s
+qwen3:8b (nothink)        100%   100%     0.8s     25.4s     7.5   183.0    8.6s
+mistral:latest            100%   100%     0.8s     25.2s    6.11   149.5    6.2s
+llama3.2:3b               100%    50%     0.4s      8.9s    31.3   244.5    6.9s
+ministral-3:3b            100%    50%     0.5s     18.9s   13.72   245.0   10.1s
+gemma3:4b                 100%    50%     0.5s      5.4s   26.39   122.5   64.3s
+qwen2.5:7b                100%    50%     0.9s     38.7s    5.64   210.5    8.6s
+llama3.1:8b               100%    50%     1.0s     26.1s    6.35   158.5   10.4s
+granite3.1-moe:latest     100%     0%     0.2s      2.2s  152.24   282.0    4.1s
+mistral-nemo:12b           83%   100%     1.2s     36.6s    4.09   138.5   10.7s
+
+1er mot  : delai avant le premier mot affiche (ce que l'utilisateur ressent)
+Complete : duree jusqu'au dernier mot
+Charg.   : chargement du modele en memoire, paye a chaque changement de modele
+
+------------------------------------------------------------------------------
+DETAIL PAR CAS   (OK = bonne langue ; KO = mauvaise langue, melange ou erreur)
+------------------------------------------------------------------------------
+Modele                    1    2    3    4    5    6    7    8   tronquees
+--------------------------------------------------------------------------
+qwen3:4b-instruct        OK   OK   OK   OK   OK   OK   OK   OK           1
+qwen3:8b (nothink)       OK   OK   OK   OK   OK   OK   OK   OK           1
+mistral:latest           OK   OK   OK   OK   OK   OK   OK   OK           0
+llama3.2:3b              OK   OK   OK   OK   OK   OK   KO   OK           0
+ministral-3:3b           OK   OK   OK   OK   OK   OK   KO   OK           1
+gemma3:4b                OK   OK   OK   OK   OK   OK   KO   OK           1
+qwen2.5:7b               OK   OK   OK   OK   OK   OK   KO   OK           0
+llama3.1:8b              OK   OK   OK   OK   OK   OK   KO   OK           0
+granite3.1-moe:latest    OK   OK   OK   OK   OK   OK   KO   KO           0
+mistral-nemo:12b         OK   OK   OK   KO   OK   OK   OK   OK           0
+
+  1 = FR-meteo
+  2 = FR-meteo-en
+  3 = FR-vols-en
+  4 = FR-activites-en
+  5 = FR-itineraire-en
+  6 = FR-vide-en
+  7 = EN-meteo-fr
+  8 = ES-activites-en
+
+------------------------------------------------------------------------------
+ECHECS DE LANGUE
+------------------------------------------------------------------------------
+
+llama3.2:3b
+   [EN-meteo-fr] repond en FR au lieu de EN (FR 46 / EN 0 / ES 0)
+      "Bonjour ! D'après les informations disponibles, il semblerait que le temps en Nice demain sera très agréable p..."
+
+ministral-3:3b
+   [EN-meteo-fr] repond en FR au lieu de EN (FR 31 / EN 0 / ES 0)
+      "Bonjour ! La météo à Nice demain sera très agréable pour une journée en bord de mer. Il fera un temps ensoleil..."
+
+gemma3:4b
+   [EN-meteo-fr] repond en FR au lieu de EN (FR 17 / EN 0 / ES 0)
+      "Voici les prévisions pour Nice demain : Le ciel sera dégagé avec un grand soleil ! La température minimale ser..."
+
+qwen2.5:7b
+   [EN-meteo-fr] repond en FR au lieu de EN (FR 22 / EN 0 / ES 0)
+      "Selon les prévisions météorologiques, demain à Nice il fera grand soleil avec une température minimale de 19°C..."
+
+llama3.1:8b
+   [EN-meteo-fr] repond en FR au lieu de EN (FR 22 / EN 0 / ES 0)
+      ""Bonjour ! Selon les prévisions météorologiques, demain à Nice il fera grand soleil avec une température maxim..."
+
+granite3.1-moe:latest
+   [EN-meteo-fr] repond en FR au lieu de EN (FR 40 / EN 0 / ES 0)
+      "Bien sûr, selon les informations que j'ai, le temps en Nice pour demain sera principalement ensoleillé avec un..."
+   [ES-activites-en] repond en FR au lieu de ES (FR 63 / EN 1 / ES 2)
+      "Si vous solo tenez un jour à visiter Madrid, voici quelques suggestions d'activités qui vous feront découvrir ..."
+
+mistral-nemo:12b
+   [FR-activites-en] repond en EN au lieu de FR (FR 0 / EN 44 / ES 0)
+      "If you're visiting Rome with kids, here are some great family-friendly activities to consider: 1. **Explora - ..."
+
+==============================================================================
+LECTURE
+==============================================================================
+Le plus reactif sans faute de francais : qwen3:4b-instruct  (0.5s avant le 1er mot, 20.67 tok/s)
+
+La reponse finale s'affiche en streaming. On lit environ 4 mots/s,
+soit ~6 a 8 tok/s en francais : au-dessus, le texte arrive plus vite
+qu'on ne le lit et seul le delai avant le 1er mot se ressent. En
+dessous, l'utilisateur attend le texte.
+
+Deux modeles (un pour les outils, un pour la reponse) : s'ils ne
+tiennent pas ensemble dans la VRAM, chaque question paie la colonne
+Charg. en plus. Le verifier avec 'ollama ps' avant de trancher.
+
+Ce bench ne juge ni la fidelite aux donnees ni la qualite du texte :
+relire les reponses completes dans resultats.json (champ 'reponse').
+La detection de langue est heuristique (mots-outils), seuil de melange
+a 75% de mots dans la langue attendue.
+==============================================================================

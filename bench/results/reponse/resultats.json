@@ -1,0 +1,1198 @@
+{
+  "meta": {
+    "date": "2026-09-24T14:32:39+00:00",
+    "machine": "thomas-ASUS-TUF-Dash-F15-FX517ZE-TUF517ZE",
+    "os": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "repetitions": 1,
+    "temperature": 0.0,
+    "max_tokens": 700,
+    "min_share": 0.75,
+    "cas": [
+      {
+        "id": "FR-meteo",
+        "langue": "fr"
+      },
+      {
+        "id": "FR-meteo-en",
+        "langue": "fr"
+      },
+      {
+        "id": "FR-vols-en",
+        "langue": "fr"
+      },
+      {
+        "id": "FR-activites-en",
+        "langue": "fr"
+      },
+      {
+        "id": "FR-itineraire-en",
+        "langue": "fr"
+      },
+      {
+        "id": "FR-vide-en",
+        "langue": "fr"
+      },
+      {
+        "id": "EN-meteo-fr",
+        "langue": "en"
+      },
+      {
+        "id": "ES-activites-en",
+        "langue": "es"
+      }
+    ]
+  },
+  "models": {
+    "gemma3:4b": {
+      "cases": [
+        {
+          "id": "FR-meteo",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.54,
+          "total_s": 4.11,
+          "reponse": "Il fera beau à Lisbonne ce samedi 27/09 avec des températures minimales de 16°C et maximales de 24°C et un ciel ensoleillé. Dimanche 28/09, il y aura des averses l'après-midi avec des températures minimales de 15°C et maximales de 21°C et 4 mm de pluie."
+        },
+        {
+          "id": "FR-meteo-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.51,
+          "total_s": 3.58,
+          "reponse": "Oui, il va probablement pleuvoir à Porto demain. La prévision indique des averses légères le matin, qui devraient se dissiper en fin d'après-midi. Il y a une probabilité de 70% de précipitations et on prévoit 3.2 mm de pluie. Il est donc conseillé d'emporter un parapluie."
+        },
+        {
+          "id": "FR-vols-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.58,
+          "total_s": 6.6,
+          "reponse": "Voici quelques vols disponibles pour Paris-Lisbonne le 5 juin 2027 :\n\n*   **TAP Air Portugal** - Vol TP437 : Départ à 07h15, arrivée à 08h50. Prix : 142.30 EUR.\n*   **Air France** - Vol AF1024 : Départ à 12h40, arrivée à 14h20. Prix : 189.00 EUR.\n*   **Transavia** - Vol TO7630 : Départ à 18h05, arrivée à 19h45. Prix : 96.50 EUR."
+        },
+        {
+          "id": "FR-activites-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.56,
+          "total_s": 11.64,
+          "reponse": "Que faire à Rome avec des enfants ? Voici quelques idées pour une journée (ou plusieurs !) en famille à Rome :\n\n*   **Explora - Children's Museum of Rome :** C'est un musée interactif parfait pour les enfants de moins de 12 ans. Il propose des expositions pratiques sur la science, la ville et l'environnement. Le prix est de 9 EUR par enfant.\n\n*   **Bioparco di Roma (Zoo de Rome) :** Situé dans le parc de Villa Borghese, ce zoo abrite plus de 1000 animaux. Une excellente option pour une demi-journée en famille. Le prix est de 18 EUR pour un adulte et 14 EUR pour un enfant.\n\n*   **Time Elevator Rome :** Pour une expérience immersive de 45 minutes, le Time Elevator vous transporte à travers 3000 ans d'histoire romaine grâce à un cinéma 5D. Le prix est de 12 EUR.\n\n*   **Villa Borghese Gardens :** Profitez de ce grand parc pour louer des vélos, des bateaux à ramer ou des charrettes à pédales. L'entrée est gratuite !\n\nJ'espère que ces suggestions vous aideront à planifier votre voyage en famille à Rome !"
+        },
+        {
+          "id": "FR-itineraire-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 1,
+          "ttft_s": 0.61,
+          "total_s": 29.17,
+          "reponse": "Absolument ! Voici une proposition d'itinéraire de 3 jours à Barcelone du 14 au 16 mai, tenant compte de la météo prévisionnelle et des activités disponibles :\n\n**Prévisions Météo :**\n\n*   **14 Mai :** Ensoleillé (Max 24°C)\n*   **15 Mai :** Orages possibles l'après-midi (Max 21°C)\n*   **16 Mai :** Partiellement nuageux (Max 23°C)\n\n**Itinéraire :**\n\n**Jour 1 (14 Mai) : Immersion Gaudinienne & Plage**\n\n*   **Matin (9h00 - 12h30) :** Commencez votre journée par la **Sagrada Familia**.  En raison de la météo ensoleillée, c'est le moment idéal pour profiter de cette merveille architecturale. *Important :* Réservez vos billets à l'avance pour éviter les longues files d'attente.\n*   **Après-midi (14h00 - 18h00) :** Direction **Park Güell**.  Profitez des vues panoramiques sur la ville.  L'après-midi est prévu ensoleillé, parfait pour une promenade.\n*   **Soir (19h00) :** Détendez-vous sur **Barceloneta Beach**.  Profitez du soleil et de l'air marin.\n\n**Jour 2 (15 Mai) : Culture & Préparation aux Orages**\n\n*   **Matin (9h30 - 12h30) :** Visitez le **Picasso Museum** dans le quartier du Born.  C'est une excellente façon de découvrir les premiers travaux de l'artiste.\n*   **Après-midi (14h00 - 17h00) :**  En raison des orages prévus, concentrez-vous sur des activités en intérieur.  Explorez **La Boqueria Market** pour une immersion dans la culture culinaire locale.\n*   **Soir (19h00) :**  Recherchez un restaurant dans le quartier du Born pour dîner.\n\n**Jour 3 (16 Mai) : Vues & Détente**\n\n*   **Matin (10h00 - 13h00) :**  Profitez du temps ensoleillé pour une visite à **Park Güell** (si vous n'avez pas eu le temps de bien l'explorer le jour précédent) ou explorez d'autres quartiers.\n*   **Après-midi (14h00 - 17h00) :**  Détendez-vous et profitez de l'ambiance de la ville. Vous pouvez retourner à la plage ou explorer un quartier que vous avez manqué.\n\n**Conseils supplémentaires :**\n\n*   **Réservations :** Réservez vos billets pour les attractions populaires à l'avance, surtout pour la Sagrada Familia.\n*   **Météo :** Soyez prêt aux changements de météo, surtout le 15 Mai. Prévoyez un parapluie ou un imperméable.\n*"
+        },
+        {
+          "id": "FR-vide-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.47,
+          "total_s": 3.04,
+          "reponse": "Non, il n'y a pas de vol direct de Lille (LIL) à Tokyo (HND) le 3 mars 2027. Les résultats de recherche indiquent qu'il n'y a pas de vols directs et que les vols avec escale via CDG ou AMS sont disponibles."
+        },
+        {
+          "id": "EN-meteo-fr",
+          "langue": "en",
+          "reussites": 0,
+          "essais": 1,
+          "pourquoi": "repond en FR au lieu de EN (FR 17 / EN 0 / ES 0)",
+          "extrait_echec": "Voici les prévisions pour Nice demain :\n\nLe ciel sera dégagé avec un grand soleil ! La température minimale sera de 19°C et la maximale de 27°C. Il y aura une b",
+          "tronquees": 0,
+          "ttft_s": 0.47,
+          "total_s": 4.18,
+          "reponse": "Voici les prévisions pour Nice demain :\n\nLe ciel sera dégagé avec un grand soleil ! La température minimale sera de 19°C et la maximale de 27°C. Il y aura une brise légère et la température de l'eau sera de 23°C. L'indice UV est de 7.\n\nAbsolument, vous devriez planifier une journée à la plage ! Les conditions seront parfaites."
+        },
+        {
+          "id": "ES-activites-en",
+          "langue": "es",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.51,
+          "total_s": 11.48,
+          "reponse": "¡Claro que sí! Si solo tienes un día en Madrid, aquí te dejo algunas opciones para aprovecharlo al máximo:\n\nPuedes elegir entre varias opciones dependiendo de tus intereses:\n\n*   **Museo del Prado:** Si te gusta el arte, el Museo del Prado es imprescindible. Alberga obras maestras de Velázquez, Goya y El Greco.  Te recomiendo dedicar al menos 2-3 horas a visitarlo. El precio es de 15 EUR, pero es gratuito de 6 a 8 pm.\n\n*   **Parque del Retiro:** Para un día más relajado, puedes pasar tiempo en el Parque del Retiro, uno de los parques más grandes de Madrid. Puedes alquilar una barca en el lago o simplemente pasear y disfrutar del ambiente. ¡Es gratis!\n\n*   **Palacio Real de Madrid:**  Visita el Palacio Real, la residencia oficial de la familia real española, con sus impresionantes 3,418 habitaciones. El precio de entrada es de 14 EUR.\n\n*   **Mercado de San Miguel:** Para almorzar o para probar una variedad de tapas, el Mercado de San Miguel es una excelente opción.  El precio varía según lo que compres.\n\n¡Espero que disfrutes tu día en Madrid!"
+        }
+      ],
+      "scores": {
+        "langue_fr": 100.0,
+        "langue_autres": 50.0
+      },
+      "perf": {
+        "ttft_s_median": 0.53,
+        "ttft_s_max": 0.6102092649998667,
+        "total_s_median": 5.39,
+        "gen_tok_s_median": 26.39,
+        "tokens_median": 122.5,
+        "chargement_s": 64.34,
+        "tronquees": 1,
+        "thinking_chars": 0,
+        "appels": 8
+      }
+    },
+    "ministral-3:3b": {
+      "cases": [
+        {
+          "id": "FR-meteo",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.48,
+          "total_s": 7.89,
+          "reponse": "Ce week-end à Lisbonne, voici les prévisions météorologiques :\n\n- **Samedi 27 septembre** : Il fera entre 16 et 24 degrés, avec un temps **ensoleillé** et aucune pluie prévue.\n\n- **Dimanche 28 septembre** : Les températures descendront légèrement, avec des minimums à 15°C et des maximums à 21°C. Il y aura des **averses l'après-midi**, avec environ 4 mm de pluie."
+        },
+        {
+          "id": "FR-meteo-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.46,
+          "total_s": 9.63,
+          "reponse": "Bonjour ! Selon les prévisions pour demain à Porto (Portugal), il est effectivement probable qu'il pleuve.\n\nLes conditions météo indiquent des **éclats de pluie légers en début de journée**, avec une probabilité de précipitations de **70 %**. Il est donc conseillé de prévoir un parapluie pour la matinée.\n\nVers l’après-midi, les pluies devraient s’estomper, laissant place à un temps plus sec. Les températures resteront agréables, entre **14°C et 20°C**.\n\nN’hésite pas à vérifier les mises à jour si nécessaire !"
+        },
+        {
+          "id": "FR-vols-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.55,
+          "total_s": 28.06,
+          "reponse": "Voici les vols Paris-Lisbonne le **5 juin 2027** disponibles :\n\n1. **TAP Air Portugal**\n   - **Vol TP437**\n   - **Départ** : 07:15 (CDG)\n   - **Arrivée** : 08:50 (LIS)\n   - **Durée** : Sans escale\n   - **Prix** : 142,30 € (bagages : sac cabine uniquement, bagage à soulever supplémentaire)\n   - **Compagnie** : TAP Air Portugal\n\n2. **Air France**\n   - **Vol AF1024**\n   - **Départ** : 12:40 (CDG)\n   - **Arrivée** : 14:20 (LIS)\n   - **Durée** : Sans escale\n   - **Prix** : 189,00 € (1 bagage à soulever inclus)\n   - **Compagnie** : Air France\n\n3. **Transavia**\n   - **Vol TO7630**\n   - **Départ** : 18:05 (CDG)\n   - **Arrivée** : 19:45 (LIS)\n   - **Durée** : Sans escale\n   - **Prix** : 96,50 € (uniquement sac cabine autorisé)\n   - **Compagnie** : Transavia\n\nN'hésitez pas à vérifier les disponibilités et les conditions exactes (réservations, bagages, etc.) auprès des compagnies aériennes ou de votre agence de voyage. Bon voyage !"
+        },
+        {
+          "id": "FR-activites-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.53,
+          "total_s": 38.54,
+          "reponse": "Voici quelques idées pour passer un agréable séjour à Rome avec des enfants, en profitant des activités adaptées à leur âge et à leur curiosité :\n\n### **Pour les petits explorateurs (3-12 ans)**\n1. **Explora – Musée des Enfants de Rome**\n   Un musée interactif où les enfants peuvent découvrir la science, la ville et l’environnement de manière ludique. Les ateliers et expositions hands-on feront leur bonheur ! *(Prix : 9 € par enfant)*\n\n2. **Bioparco di Roma (Zoo de Rome)**\n   Situé dans le parc Villa Borghese, ce zoo abrite plus de 1 000 animaux, dont des lions, des girafes et des singes. Une belle occasion de voir la faune en liberté ! *(Prix : 18 € adultes, 14 € enfants)*\n\n### **Pour les familles en quête d’aventure et de divertissement**\n3. **Time Elevator Rome**\n   Une expérience cinématographique immersive qui vous emmène à travers 3 000 ans d’histoire romaine en seulement 45 minutes ! Parfait pour les enfants qui aiment les histoires et les effets spéciaux. *(Prix : 12 €)*\n\n### **Pour les familles qui aiment la nature et les loisirs**\n4. **Villa Borghese Gardens**\n   Un immense parc où vous pourrez :\n   - Louer des vélos ou des pédalos pour explorer les étangs.\n   - Faire une pause pique-nique ou jouer dans les espaces verts.\n   **Accès gratuit**, idéal pour une balade détente !\n\n### **Bonus : Autres idées locales**\n- **Parc de la Villa Borghese** : Proche du zoo, il offre aussi des espaces pour courir et jouer.\n- **Marchés locaux** : Certains marchés (comme le *Mercato di Testaccio*) proposent des activités pour enfants, comme des ateliers de fabrication de pâtes ou des dégustations ludiques.\n\n### **Conseils pratiques**\n- Privilégiez les visites tôt le matin pour éviter la foule.\n- Emportez des jouets ou des livres pour les pauses.\n- Certains sites (comme le zoo) proposent des horaires adaptés aux enfants.\n\nProfitez bien de votre séjour à Rome avec vos enfants ! 😊"
+        },
+        {
+          "id": "FR-itineraire-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 1,
+          "ttft_s": 0.57,
+          "total_s": 56.72,
+          "reponse": "Voici un itinéraire équilibré pour **3 jours à Barcelone** du **14 au 16 mai 2027**, adapté à la météo prévue et aux activités disponibles :\n\n---\n\n### **Jour 1 : 14 mai – Découverte architecturale et culturelle**\n**Météo** : *Soleil* (24°C max) → Idéal pour explorer en extérieur.\n**Activités** :\n- **Matin** : **Sagrada Família** (1h30)\n  *Visitez ce chef-d’œuvre inachevé de Gaudí en intérieur, avec une vue sur la ville depuis le dôme.*\n  *Conseil* : Réservez vos billets en ligne à l’avance pour éviter les files d’attente.\n\n- **Midi** : Déjeuner dans le quartier de **Gràcia** (ex. *Can Paixano*, cuisine catalane traditionnelle).\n\n- **Après-midi** :\n  - **Park Güell** (1h30)\n  *Balade colorée et panoramique sur les collines, avec ses mosaïques et ses vues sur Barcelone.*\n  *Prévoyez des chaussures confortables et un chapeau : peu d’ombre en plein soleil.*\n\n- **Soir** : Dîner au bord de mer à **Barceloneta** (ex. *La Boqueria* pour des tapas fraîches).\n\n---\n\n### **Jour 2 : 15 mai – Culture et nature (avec prudence pour les averses)**\n**Météo** : *Éclairs en fin de journée* (max 21°C) → Privilégiez les activités couvertes ou en intérieur.\n**Activités** :\n- **Matin** : **Picasso Museum** (1h30)\n  *Découvrez l’œuvre précoce de Picasso dans le quartier historique de Born, avec des toiles en noir et blanc.*\n\n- **Midi** : Pause gourmande à **La Boqueria** (marché couvert emblématique) pour des jus frais ou des tapas.\n\n- **Après-midi** :\n  - **Option 1** : **Musée National d’Art de Catalogne (MNAC)** (si vous aimez l’art moderne).\n  *Sinon, détente en **Barceloneta** (plage) avec un pique-nique (évitez les averses en fin de journée).*\n  *Conseil* : Si la météo est capricieuse, optez pour un café dans un café couvert comme *Café de les Tres Gallines*.\n\n- **Soir** : Balade nocturne le long de la **Rambla** ou concert au **Teatro del Liceu** (vérifiez les programmations).\n\n---\n\n### **Jour 3 : 16 mai – Art et détente**\n**Météo** : *Ciel partiellement nuageux* (23°C max) → Parfait pour une journée plus calme.\n**Activités** :\n- **Matin** : **Quartier Gothique** (gratuit)\n  *Explorez ses ruelles médiévales, la **Catedral de Barcelona** et la **Plaza Real** pour un aperçu de l’histoire catalane.*\n\n- **Midi** :"
+        },
+        {
+          "id": "FR-vide-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.45,
+          "total_s": 4.49,
+          "reponse": "Non, il n'existe pas de vol direct entre Lille (LIL) et Tokyo (HND) le **3 mars 2027**. Vous pouvez trouver des options avec escales, notamment via Paris-Charles-de-Gaulle (CDG) ou Amsterdam (AMS)."
+        },
+        {
+          "id": "EN-meteo-fr",
+          "langue": "en",
+          "reussites": 0,
+          "essais": 1,
+          "pourquoi": "repond en FR au lieu de EN (FR 31 / EN 0 / ES 0)",
+          "extrait_echec": "Bonjour ! La météo à Nice demain sera très agréable pour une journée en bord de mer.\n\nIl fera un temps ensoleillé avec des températures entre **19°C et 27°C**, ",
+          "tronquees": 0,
+          "ttft_s": 0.44,
+          "total_s": 8.26,
+          "reponse": "Bonjour ! La météo à Nice demain sera très agréable pour une journée en bord de mer.\n\nIl fera un temps ensoleillé avec des températures entre **19°C et 27°C**, une brise légère et une mer à **23°C**, ce qui est parfait pour une baignade. L’indice UV sera élevé (7), donc n’oubliez pas votre crème solaire pour vous protéger du soleil.\n\nOui, je pense que c’est une excellente idée de planifier une journée de plage ! 😊"
+        },
+        {
+          "id": "ES-activites-en",
+          "langue": "es",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.49,
+          "total_s": 54.34,
+          "reponse": "¡Qué buena elección! Madrid en un solo día puede ser muy intensa, pero con una buena organización puedes disfrutar de lo más emblemático de la ciudad. Aquí tienes una propuesta equilibrada basada en los recursos disponibles:\n\n---\n\n### **Itinerario sugerido para un día en Madrid**\n**Mañana (2-3 horas): Arte y cultura**\n- **Museo del Prado** (15 €, gratis de 18:00 a 20:00)\n  *No te pierdas obras maestras como *Las Meninas* de Velázquez, *El 3 de mayo* de Goya o *La Coronación de la Virgen* de El Greco. Llega temprano para evitar colas. Dedica al menos 2 horas si te interesa el arte.*\n\n**Media mañana (15-30 min): Café y paseo**\n- Toma un café o un *churros con chocolate* en la **Plaza Mayor** (aunque no está en la lista, es un clásico madrileño) o en **Café Comercial** (cerca del Prado).\n\n---\n\n**Tarde (1-2 horas): Naturaleza y tradición**\n- **Parque del Retiro** (gratis)\n  *Empieza por el **Estanque** (puedes alquilar una barca si te animas) y luego camina hasta el **Palacio de Cristal** o la **Fuente del Ángel Caído**. También puedes visitar el **Jardín Botánico** (gratis) o el **Palacio de Cristal** (entrada gratuita).*\n\n**Comida (1 hora): Gastronomía local**\n- **Mercado de San Miguel** (precio variable por plato)\n  *Ideal para probar tapas tradicionales como *patatas bravas*, *croquetas* o *tortilla española*. Recomiendo probar el *pisto manchego* o el *lomo en escabeche*.*\n\n---\n**Atardecer (opcional, si te sobra tiempo):**\n- **Puerta del Sol y Gran Vía** (gratis)\n  *Si te sobra energía, camina hasta el **Plaza Mayor** o la **Puerta del Sol** (donde está la estatua del Oso y el Madroño) para ver el atardecer desde una terraza con vistas (como **Café del Parque**).\n\n---\n\n### **Consejos rápidos:**\n- **Transporte:** Usa el metro (zona 1) o camina. Madrid es muy peatonal.\n- **Entradas:** Compra las entradas online del Prado y el Palacio Real para evitar colas.\n- **Horarios:** Evita las horas pico (9:00-14:00) para moverte con más tranquilidad.\n\n---\n**Alternativas si prefieres algo más corto:**\n- Si solo tienes 3-4 horas, prioriza el **Prado** + **Retiro** (sin mercado) o el **Palacio Real** (si te gusta la arquitectura real).\n- Si buscas algo más relajado, el **Retiro** y el **Mercado de San Miguel** pueden ser suficientes.\n\n¿Quieres que ajuste algo del itinerario según tus intereses (más arte, más comida, más naturaleza)? 😊"
+        }
+      ],
+      "scores": {
+        "langue_fr": 100.0,
+        "langue_autres": 50.0
+      },
+      "perf": {
+        "ttft_s_median": 0.49,
+        "ttft_s_max": 0.5687517490005121,
+        "total_s_median": 18.85,
+        "gen_tok_s_median": 13.72,
+        "tokens_median": 245.0,
+        "chargement_s": 10.1,
+        "tronquees": 1,
+        "thinking_chars": 0,
+        "appels": 8
+      }
+    },
+    "llama3.2:3b": {
+      "cases": [
+        {
+          "id": "FR-meteo",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.35,
+          "total_s": 8.01,
+          "reponse": "Bonjour !\n\nPour connaître le temps à Lisbonne ce week-end, j'ai consulté les prévisions météorologiques disponibles.\n\nVoici les résultats :\n\n**Samedi 27/09 :**\n\n* Température minimale : 16°C\n* Température maximale : 24°C\n* Ciel : Ensoleillé\n* Précipitations attendues : 0 mm\n\nIl devrait être un jour ensoleillé et agréable à Lisbonne ce samedi.\n\n**Dimanche 28/09 :**\n\n* Température minimale : 15°C\n* Température maximale : 21°C\n* Ciel : Averses après-midi\n* Précipitations attendues : 4 mm\n\nIl y aura des averses après-midi ce dimanche, donc il faudra être prêt à prendre son parapluie.\n\nJ'espère que ces informations vous seront utiles pour planifier votre week-end à Lisbonne !"
+        },
+        {
+          "id": "FR-meteo-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.42,
+          "total_s": 7.85,
+          "reponse": "Bonjour !\n\nPour savoir si il va pleuvoir à Porto demain, j'ai consulté les données météorologiques disponibles pour vous.\n\nSelon les informations fournies, le 25 septembre 2026, à Porto, Portugal, on peut prévoir des précipitations légères au matin, avec une probabilité de pluie de 70%. Cependant, il est prévu que la pluie s'évacuera en après-midi.\n\nEn fonction de ces données, je vous conseille de prendre un parapluie pour protéger votre équipement, mais pas nécessairement pour vous mouiller. La pluie sera probablement légère et ne devrait pas empêcher vos activités.\n\nCependant, si vous préférez être sur le safe side, vous pouvez toujours emporter un parapluie léger ou une petite couverture en cas de surprise.\n\nJ'espère que cela vous aidera à planifier votre journée !"
+        },
+        {
+          "id": "FR-vols-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.37,
+          "total_s": 9.89,
+          "reponse": "Bonjour ! Je vais vous aider à trouver un vol Paris-Lisbonne le 5 juin.\n\nVoici les résultats de ma recherche :\n\n**Vols disponibles pour le 5 juin :**\n\n*   **TAP Air Portugal (TP437)** :\n    *   Départ : 07h15\n    *   Arrivée : 08h50\n    *   Durée du vol : 1 heure et 35 minutes\n    *   Prix : 142,30 €\n    *   Bagages : Cabin bag only, checked bag extra\n\n*   **Air France (AF1024)** :\n    *   Départ : 12h40\n    *   Arrivée : 14h20\n    *   Durée du vol : 1 heure et 40 minutes\n    *   Prix : 189,00 €\n    *   Bagages : 1 checked bag included\n\n*   **Transavia (TO7630)** :\n    *   Départ : 18h05\n    *   Arrivée : 19h45\n    *   Durée du vol : 2 heures et 40 minutes\n    *   Prix : 96,50 €\n    *   Bagages : Personal item only\n\nJ'espère que ces informations vous seront utiles pour planifier votre voyage !"
+        },
+        {
+          "id": "FR-activites-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.35,
+          "total_s": 12.94,
+          "reponse": "Bonjour ! Si vous cherchez à passer une journée amusante et éducatrice avec vos enfants à Rome, voici quelques idées d'activités qui pourraient vous intéresser :\n\n1. **Explora - Children's Museum of Rome** : Ce musée interactif est conçu spécifiquement pour les enfants de moins de 12 ans. Ils pourront découvrir des expositions sur la science, l'histoire de la ville et l'environnement à travers des activités manuelles. Le prix est de 9 EUR par enfant.\n2. **Bioparco di Roma** : Si vous aimez les animaux, le zoo de Rome est un excellent choix pour une journée de détente. Vous pouvez y passer une demi-journée et découvrir plus de 1 000 espèces d'animaux. Le prix est de 18 EUR pour un adulte et 14 EUR pour un enfant.\n3. **Time Elevator Rome** : Pour une expérience unique, vous pouvez prendre le train à 5D qui vous emmène à travers les 3 000 ans de l'histoire romaine en 45 minutes. Le prix est de 12 EUR.\n4. **Villa Borghese Gardens** : Si vous préférez passer du temps dans la nature, les jardins de Villa Borghese sont un excellent choix. Vous pouvez louer des vélos, des bateaux à voile ou des carrioles pour explorer le parc. L'entrée est gratuite.\n\nCes activités offrent une variété d'options pour les enfants et peuvent être adaptées aux âges et aux intérêts de vos petits. N'hésitez pas à vérifier les horaires et les prix avant de partir !"
+        },
+        {
+          "id": "FR-itineraire-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.4,
+          "total_s": 18.98,
+          "reponse": "Bonjour ! Je serais ravi de vous aider à planifier votre séjour à Barcelone du 14 au 16 mai.\n\nTout d'abord, je vais vous donner un aperçu de la météo prévue pour ces jours :\n\n* Le 14 mai : Soleil, avec une température maximale de 24°C.\n* Le 15 mai : Prévisions de pluie et thunderstorms en après-midi, donc il faudra être prêt à se protéger.\n* Le 16 mai : Partiellement nuageux, avec une température maximale de 23°C.\n\nMaintenant, je vais vous suggérer un itinéraire pour ces trois jours :\n\n**Jour 1 : 14 mai**\n\n* Matinée : Commencez par visiter la Sagrada Familia, l'une des attractions les plus emblématiques de Barcelone. N'oubliez pas de réserver vos billets à l'avance, car les visites durent environ 1,5 heure.\n* Après-midi : Passez une heure au parc Guell, un véritable joyau de la ville conçu par Antoni Gaudí. Profitez des vues panoramiques sur la ville et admirez la beauté de l'architecture unique.\n\n**Jour 2 : 15 mai**\n\n* Matinée : Visitez le Musée Picasso, qui abrite plus de 4 000 œuvres de l'artiste. Le musée est situé dans le quartier de la Born et est un excellent endroit pour découvrir les œuvres de Picasso.\n* Après-midi : Si vous préférez une activité en plein air, allez à Barceloneta Beach, où vous pouvez profiter du soleil et de la mer. N'oubliez pas de prendre des repas au restaurant côtier.\n\n**Jour 3 : 16 mai**\n\n* Matinée : Visitez le marché de La Boqueria, qui est l'un des plus célèbres marchés de nourriture à Barcelone. Profitez des saveurs locales et des produits frais.\n* Après-midi : Si vous avez encore du temps, allez au parc Guell pour une dernière visite ou profitez d'une pause dans un café.\n\nJ'espère que cet itinéraire vous conviendra ! N'hésitez pas à me demander si vous avez besoin de plus d'informations ou de suggestions supplémentaires."
+        },
+        {
+          "id": "FR-vide-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.31,
+          "total_s": 4.08,
+          "reponse": "Bonjour !\n\nMalheureusement, je n'ai pas trouvé de vol direct entre Lille et Tokyo pour le 3 mars 2027. Selon les informations disponibles, il n'y a pas de vols directs disponibles pour cette date.\n\nCependant, je peux vous indiquer que des vols connectés sont disponibles via Paris-Charles-de-Gaulle (CDG) ou Amsterdam-Schiphol (AMS). Vous pouvez contacter directement les compagnies aériennes pour obtenir plus d'informations sur ces options de vol."
+        },
+        {
+          "id": "EN-meteo-fr",
+          "langue": "en",
+          "reussites": 0,
+          "essais": 1,
+          "pourquoi": "repond en FR au lieu de EN (FR 46 / EN 0 / ES 0)",
+          "extrait_echec": "Bonjour !\n\nD'après les informations disponibles, il semblerait que le temps en Nice demain sera très agréable pour une journée de plage.\n\nVoici les détails :\n\n*",
+          "tronquees": 0,
+          "ttft_s": 0.29,
+          "total_s": 7.45,
+          "reponse": "Bonjour !\n\nD'après les informations disponibles, il semblerait que le temps en Nice demain sera très agréable pour une journée de plage.\n\nVoici les détails :\n\n* Le ciel devrait être grand soleil, ce qui signifie que vous pourrez profiter du soleil sans nuages.\n* La température devrait varier entre 19°C et 27°C, ce qui est parfait pour une journée de beach day.\n* Il y aura une brise légère, ce qui aidera à maintenir la température agréable.\n* La mer devrait être à 23°C, ce qui est idéal pour un bain ou une activité nautique.\n\nEn résumé, c'est une excellente occasion de planifier une journée de plage en Nice demain ! N'oubliez pas d'emporter votre chapeau, vos lunettes de soleil et un peu de crème solaire pour protéger votre peau du soleil."
+        },
+        {
+          "id": "ES-activites-en",
+          "langue": "es",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.41,
+          "total_s": 13.07,
+          "reponse": "¡Hola! Si solo tienes un día en Madrid, aquí te presento algunas opciones para que puedas aprovechar al máximo tu tiempo:\n\n**Visita el Museo del Prado**: Este museo es uno de los mejores de Europa y cuenta con una colección impresionante de arte español e internacional. Puedes pasar al menos 2-3 horas explorando las salas y admirando las obras maestras de Velázquez, Goya y El Greco.\n\n**Disfruta del Parque del Retiro**: Este parque es un oasis en el corazón de la ciudad y ofrece una relajante escapada de la rutina diaria. Puedes pasear por los senderos, alquilar un bote y disfrutar del lago, o simplemente sentarte en uno de los muchos bancos y disfrutar del paisaje.\n\n**Explora el Palacio Real**: Si estás interesado en la historia y la arquitectura, el Palacio Real es una visita obligatoria. Con 3.418 habitaciones, es uno de los palacios más grandes del mundo. Puedes tomar un paseo por las salas y disfrutar de la opulencia del siglo XVIII.\n\n**Prueba la gastronomía en Mercado de San Miguel**: Este mercado histórico es famoso por sus tapas y su ambiente acogedor. Puedes probar diferentes platos y bebidas, desde pinchos hasta vinos locales, y disfrutar de una experiencia culinaria auténtica.\n\nRecuerda que cada uno de estos lugares tiene un precio asociado, así que asegúrate de tener suficiente dinero para visitarlos todos. ¡Espero que disfrutes tu día en Madrid!"
+        }
+      ],
+      "scores": {
+        "langue_fr": 100.0,
+        "langue_autres": 50.0
+      },
+      "perf": {
+        "ttft_s_median": 0.36,
+        "ttft_s_max": 0.42419053699995857,
+        "total_s_median": 8.95,
+        "gen_tok_s_median": 31.3,
+        "tokens_median": 244.5,
+        "chargement_s": 6.86,
+        "tronquees": 0,
+        "thinking_chars": 0,
+        "appels": 8
+      }
+    },
+    "qwen3:4b-instruct": {
+      "cases": [
+        {
+          "id": "FR-meteo",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.48,
+          "total_s": 6.99,
+          "reponse": "Ce week-end à Lisbonne, le temps sera plutôt agréable :\n\n- **Samedi 27 septembre** : journée ensoleillée, avec une température allant de 16 °C à 24 °C. Aucune pluie prévue.\n- **Dimanche 28 septembre** : journée partagée entre un ciel clair au matin et des averses à l’après-midi. La température ira de 15 °C à 21 °C, avec une légère pluie (4 mm).\n\nPrévoyez un parapluie pour le dimanche après-midi ! 😊"
+        },
+        {
+          "id": "FR-meteo-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.39,
+          "total_s": 6.51,
+          "reponse": "Oui, il y aura probablement un peu de pluie à Porto demain matin, avec une probabilité de précipitations de 70 %. Il est donc conseillé de prendre un parapluie, surtout en cas de sortie matinale. La pluie devrait cesser vers l'après-midi, et le temps se clarifiera. La température sera entre 14 et 20 °C, avec un vent modéré venant du sud-ouest à 25 km/h.  \n\nAlors oui, mieux vaut prendre un parapluie ! 😊"
+        },
+        {
+          "id": "FR-vols-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.54,
+          "total_s": 21.64,
+          "reponse": "Voici plusieurs vols disponibles de Paris à Lisbonne le 5 juin 2027 :\n\n1. **TAP Air Portugal – Vols TP437**  \n   - Départ : 07:15 (Aéroport Charles de Gaulle – CDG)  \n   - Arrivée : 08:50 (Aéroport de Lisbonne – LIS)  \n   - Prix : 142,30 € (en EUR)  \n   - Bagages : Valise cabine seulement, valise enregistrée supplémentaire  \n   - Durée : 1h35 (sans escale)\n\n2. **Air France – Vols AF1024**  \n   - Départ : 12:40 (Aéroport Charles de Gaulle – CDG)  \n   - Arrivée : 14:20 (Aéroport de Lisbonne – LIS)  \n   - Prix : 189,00 € (en EUR)  \n   - Bagages : 1 valise enregistrée incluse  \n   - Durée : 1h40 (sans escale)\n\n3. **Transavia – Vols TO7630**  \n   - Départ : 18:05 (Aéroport Charles de Gaulle – CDG)  \n   - Arrivée : 19:45 (Aéroport de Lisbonne – LIS)  \n   - Prix : 96,50 € (en EUR)  \n   - Bagages : Seulement un objet personnel (pas de valise enregistrée)  \n   - Durée : 1h40 (sans escale)\n\n👉 *Tous les vols sont directs (sans escale) et sont disponibles le 5 juin 2027.*\n\nTu peux choisir selon ton emploi du temps et ton budget.  \nN’hésite pas à me dire si tu veux une option avec bagage enregistré ou un autre horaire ! 😊"
+        },
+        {
+          "id": "FR-activites-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.44,
+          "total_s": 28.91,
+          "reponse": "Que faire à Rome avec des enfants ?\n\nRome est une ville à la fois riche en histoire et idéale pour les familles ! Voici quelques activités ludiques, accessibles et adaptées aux enfants, que vous pouvez découvrir facilement à Rome :\n\n🔹 **Explora - Children's Museum of Rome**  \nUn musée interactif conçu spécialement pour les enfants de moins de 12 ans. Avec des expériences pratiques sur la science, la ville de Rome et l’environnement, les enfants s’amusent tout en apprenant.  \n📍 Prix : 9 EUR par enfant  \n⭐ Note : 4,5/5 – Très bien apprécié par les familles.\n\n🔹 **Bioparco di Roma (le zoo de Rome)**  \nSitué dans le parc de Villa Borghese, ce zoo accueille plus de 1 000 animaux. C’est une belle occasion de découvrir la nature et les animaux en plein cœur de la ville. Une visite de demi-jour est idéale pour les enfants.  \n📍 Prix : 14 EUR par enfant  \n⭐ Note : 4,3/5 – Un lieu très apprécié pour les familles.\n\n🔹 **Time Elevator Rome**  \nUne expérience cinématographique immersive qui vous plonge en 45 minutes dans 3 000 ans d’histoire romaine. Les enfants adoreront ce voyage à travers le temps, avec des effets sonores, visuels et sensoriels.  \n📍 Prix : 12 EUR (par personne)  \n⭐ Note : 4,4/5 – Une expérience inoubliable pour les petits historiens !\n\n🔹 **Villa Borghese Gardens**  \nUn grand parc verdoyant où vous pouvez profiter de la nature, faire une promenade, ou même louer un vélo, un bateau à pédalier ou un chariot à pédalier. C’est un lieu parfait pour des activités en plein air, sans pression.  \n📍 Prix : Gratuit  \n⭐ Note : 4,7/5 – Un espace calme et agréable pour toute la famille.\n\n💡 **Conseil** : Pour un itinéraire équilibré, commencez par les jardins de Villa Borghese (gratuit et détendu), puis passez au Time Elevator pour une expérience immersive, puis allez au Bioparco pour une visite animée. Enfin, terminez par l’Explora pour un moment d’apprentissage interactif.\n\nRome est une ville où l’histoire et la nature se mêlent parfaitement – et les enfants y trouvent de nombreuses raisons de s’enthousiasmer ! 🌟"
+        },
+        {
+          "id": "FR-itineraire-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 1,
+          "ttft_s": 0.5,
+          "total_s": 36.7,
+          "reponse": "Bien sûr ! Voici un itinéraire pensé pour 3 jours à Barcelone du **14 au 16 mai 2027**, en tenant compte de la météo et des activités disponibles :\n\n---\n\n### 🌤️ **Prévision météo à Barcelone (du 14 au 16 mai 2027)**  \n- **14 mai** : Jour ensoleillé, température maximale de 24 °C  \n- **15 mai** : Après-midi avec des orages, température maximale de 21 °C  \n- **16 mai** : Partiellement nuageux, température maximale de 23 °C  \n\n👉 **Conseil** : Les activités en plein air sont idéales en journée, mais il est préférable d’éviter les sorties en plein air en fin de journée (surtout le 15 mai) pour ne pas être exposé aux orages.\n\n---\n\n### 🗓️ **Itinéraire de 3 jours (14 au 16 mai)**\n\n#### **Jour 1 – 14 mai : Jour ensoleillé – Découverte de la ville et des sites emblématiques**\n**Matin** :  \n- **9h – 10h** : Visite du **La Boqueria Market** (intérieur)  \n  → Idéal en début de journée, avant que la chaleur ne monte. Dégustez des spécialités locales comme des tapas, des fromages ou des fruits de mer.  \n  → *Conseil* : Arrivez tôt pour éviter les foules.\n\n**Midi** :  \n- **12h – 13h** : Pause au restaurant à proximité (ex. : *El Celler de Can Roca* ou *Passeig de Gràcia* pour un repas local).\n\n**Après-midi** :  \n- **14h – 15h30** : Visite du **Sagrada Família** (intérieur)  \n  → Le temple de Gaudí est à l’abri de la pluie, idéal pour un après-midi ensoleillé.  \n  → *Prévoir un créneau de 1h30 à 2h30* (visite en moyenne 1h30, avec 30 min de déplacement).\n\n**Soir** :  \n- **18h – 19h** : Dîner au bord de la mer à **Barceloneta Beach** (extérieur)  \n  → Le soir, la plage est calme, idéal pour un dîner en bord de mer avec vue sur la mer.\n\n---\n\n#### **Jour 2 – 15 mai : Jour avec orages – Activités à l’intérieur ou en début de journée**\n**Matin** :  \n- **9h – 10h30** : Visite du **Picasso Museum** (intérieur)  \n  → Situé dans le quartier de **Born**, ce musée est parfait pour éviter les orages de l’après-midi.  \n  → Découvrez plus"
+        },
+        {
+          "id": "FR-vide-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.36,
+          "total_s": 5.72,
+          "reponse": "Non, il n'y a pas de vol direct de Lille à Tokyo le 3 mars 2027.  \n\nLe résultat de la recherche indique que aucun vol direct n'est disponible pour cette route et cette date. Cependant, des vols avec escale sont possibles, via Paris (CDG) ou Amsterdam (AMS).  \n\nPour des informations plus précises ou des options avec escale, je vous conseille de consulter un service de réservation de vols en ligne."
+        },
+        {
+          "id": "EN-meteo-fr",
+          "langue": "en",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.39,
+          "total_s": 5.55,
+          "reponse": "The weather in Nice tomorrow will be great for a beach day! There will be grand soleil (bright sunshine) with a temperature ranging from 19°C to 27°C. The sea will be at a comfortable 23°C, and there will be a light breeze. The UV index is 7, which means you should take care to protect yourself from the sun—wear sunscreen, a hat, and stay hydrated. Overall, it's perfect for enjoying the beach! 🌞🌊"
+        },
+        {
+          "id": "ES-activites-en",
+          "langue": "es",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.47,
+          "total_s": 23.63,
+          "reponse": "¿Qué puedo visitar en Madrid si solo tengo un día?\n\nSi solo tienes un día en Madrid, aquí tienes algunas opciones clave para aprovecharlo al máximo, combinando visitas culturales, naturaleza y gastronomía:\n\n1. **Museo del Prado** (15 EUR, entrada gratuita de 6 a 8 p.m.)  \n   Uno de los museos de arte más importantes del mundo, con obras clásicas de Velázquez, Goya y El Greco. Dedica al menos 2 a 3 horas para disfrutar de su colección. Si llegas después de las 6 p.m., puedes entrar gratis.\n\n2. **Parque del Retiro** (entrada gratuita)  \n   Un enorme parque central donde puedes relajarte, pasear o incluso alquilar una barca para navegar por su lago. Es ideal para desconectar y disfrutar del entorno natural de la ciudad.\n\n3. **Palacio Real de Madrid** (14 EUR)  \n   La residencia oficial de la familia real española, con más de 3.400 habitaciones. Puedes visitar sus salones, jardines y el impresionante patio principal. Es una experiencia impresionante y muy visual.\n\n4. **Mercado de San Miguel** (precio por plato)  \n   Un mercado histórico con estilosos puestos de tapas. Perfecto para una comida al aire libre y sabrosa. Puedes probar especialidades locales como el jamón ibérico o el paté.\n\n**Consejo para un día completo:**  \nEmpieza por el **Museo del Prado** por la mañana (entre 10 y 12 h), luego pasa por el **Parque del Retiro** para descansar y disfrutar del paisaje. En la tarde, visita el **Palacio Real** y termina con una comida en el **Mercado de San Miguel**.\n\n¡Un día en Madrid puede ser inolvidable con esta combinación! 🇪🇸✨"
+        }
+      ],
+      "scores": {
+        "langue_fr": 100.0,
+        "langue_autres": 100.0
+      },
+      "perf": {
+        "ttft_s_median": 0.46,
+        "ttft_s_max": 0.5373161620009341,
+        "total_s_median": 14.31,
+        "gen_tok_s_median": 20.67,
+        "tokens_median": 285.0,
+        "chargement_s": 6.44,
+        "tronquees": 1,
+        "thinking_chars": 0,
+        "appels": 8
+      }
+    },
+    "granite3.1-moe:latest": {
+      "cases": [
+        {
+          "id": "FR-meteo",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.15,
+          "total_s": 1.15,
+          "reponse": "Au cours du week-end à Lisbonne, le samedi 27 septembre, vous pouvez anticiper un temps ensoleillé avec des températures maximales atteignant 24°C et minimales 16°C. Le dimanche 28 septembre, prévoyez quelques averses l'après-midi avec des températures minimales de 15°C et des maxima de 21°C, mais il y aura environ 4 mm de pluie. Profitez bien de votre séjour à Lisbonne !"
+        },
+        {
+          "id": "FR-meteo-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.15,
+          "total_s": 1.49,
+          "reponse": "Bien sûr, selon les prévisions météorologiques pour demain à Porto, en date du 25 septembre 2026, il y a une probabilité de 70% d'avoir des averses légeres en matinée. Cela signifie que vous pouvez prévoir un temps humide avec des précipitations pouvant atteindre jusqu'à 3,2 mm. Pour rester au sec et éviter les intempéries, il est recommandé d'emporter un parapluie ou une couverture légère pour la journée. N'oubliez pas de tenir compte du vent modéré venant du sud-ouest à 25 km/h. Bonne journée !"
+        },
+        {
+          "id": "FR-vols-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.18,
+          "total_s": 2.63,
+          "reponse": "Voici quelques options pour votre vol Paris-Lisbonne le 5 juin :\n\n1. TAP Air Portugal (TP437) :\n   - Carrier : TAP Air Portugal\n   - Flight : TP437\n   - Départ : 07:15\n   - Arrivée : 08:50\n   - Stops : 0\n   - Prix total : 142,30 EUR\n   - Baggage : Cabin bag only, checked bag extra\n\n2. Air France (AF1024) :\n   - Carrier : Air France\n   - Flight : AF1024\n   - Départ : 12:40\n   - Arrivée : 14:20\n   - Stops : 0\n   - Prix total : 189,00 EUR\n   - Baggage : 1 checked bag included\n\n3. Transavia (TO7630) :\n   - Carrier : Transavia\n   - Flight : TO7630\n   - Départ : 18:05\n   - Arrivée : 19:45\n   - Stops : 0\n   - Prix total : 96,50 EUR\n   - Baggage : Personal item only\n\nChaque option présente des caractéristiques différentes en termes de prix et de services offerts. Veuillez choisir celle qui convient le mieux à vos besoins."
+        },
+        {
+          "id": "FR-activites-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.18,
+          "total_s": 3.72,
+          "reponse": "Rome est une ville fascinante pour les familles, offrant une variété d'activités adaptées aux enfants. Voici quelques suggestions pour votre visite :\n\n1. **Explora - Musée des Enfants de Rome** (4.5 étoiles) : Cet musée interactif est idéal pour les jeunes visiteurs, avec des expositions centrées sur la science, la ville et l'environnement. Les enfants âgés de 2 à 12 ans peuvent profiter d'activités amusantes et engageantes (9 EUR par enfant).\n\n2. **Bioparco di Roma** (4.3 étoiles) : Situé dans le magnifique Villa Borghese, ce zoo accueille plus de 1000 animaux et propose une visite guidée en 5D qui vous transporte à travers 3000 ans de histoire romaine (18 EUR adulte, 14 EUR pour les enfants).\n\n3. **Time Elevator Rome** (4.4 étoiles) : Ce cinéma 5D offre une expérience immersive de 45 minutes qui vous plonge dans la civilisation romaine à travers des effets spéciaux et des histoires en 3D. Le billet coûte 12 EUR par personne.\n\n4. **Villa Borghese Gardens** (gratuit) : Cette grande jardin botanique est un endroit idéal pour les promenades, la bicyclette ou le pilotage de véhicules électriques. Profitez d'une journée relaxante dans cet espace verdoyant (gratuit).\n\nN'oubliez pas de planifier votre visite en fonction des horaires et des tarifs, ainsi que de prendre soin de vos enfants tout au long de ces activités. Bon séjour à Rome !"
+        },
+        {
+          "id": "FR-itineraire-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.21,
+          "total_s": 5.33,
+          "reponse": "Bien sûr, voici un itinéraire de 3 jours à Barcelone pour les dates du 14 au 16 mai, en tenant compte de la météo :\n\n**Jour 1 (14 mai) : Sagrada Familia et Parc Güell**\n\nCommencez votre journée par l'exploration de la célèbre basilique de La Sagrada Familia, conçue par Antoni Gaudi. Pour éviter les files d'attente, assurez-vous de réserver vos billets à l'avance (https://www.sagradafamilia.org/es/reservar). La visite dure environ 1,5 heure. Après la basilique, découvrez le Parc Güell, un parc urbain coloré conçu par Gaudi avec des vues panoramiques sur la ville.\n\n**Jour 2 (15 mai) : Picasso Museum et Barceloneta Beach**\n\nCommencez votre deuxième jour en visitant le célèbre musée Pompidou-Picasso, qui abrite plus de 4 000 œuvres d'art du maître espagnol. Assurez-vous de planifier une visite à l'avance (https://www.picassomuseum.org/en/). La météo prévoit des températures entre 21°C et 24°C, donc portez des vêtements légers et des chaussures confortables pour explorer le musée.\n\nAprès la visite du musée, détendez-vous à Barceloneta Beach, l'une des plages les plus populaires de la ville, avec une ambiance animée et une cuisine de rue fantastique. Profitez d'un repas léger ou d'un verre sur la plage.\n\n**Jour 3 (16 mai) : La Boqueria Market et fin du voyage**\n\nCommencez votre dernier jour par une visite au célèbre Marché de La Boqueria, un marché couvert rempli de fruits, légumes, viandes, poissons et autres produits frais. Visitez le musée du Marché (https://www.museodelmarche.com/en/) pour en savoir plus sur son histoire et ses produits. La météo prévoit des températures entre 21°C et 23°C, donc portez des vêtements légers et des chaussures confortables pour explorer le marché.\n\nEn fin de journée, retournez à l'hôtel ou au point de départ de votre itinéraire avant la fin du voyage. Bon séjour à Barcelone !"
+        },
+        {
+          "id": "FR-vide-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.12,
+          "total_s": 1.01,
+          "reponse": "Bien sûr, selon les recherches effectuées, il n'y a pas de vol direct Lille-Tokyo le 3 mars. Cependant, vous pouvez envisager des connexions via Paris (CDG) ou Amsterdam (AMS). Ces vols peuvent être une option intéressante pour votre voyage. Je vous recommande d'utiliser un moteur de recherche de vol pour comparer les prix et les horaires disponibles sur ces itinéraires alternatifs."
+        },
+        {
+          "id": "EN-meteo-fr",
+          "langue": "en",
+          "reussites": 0,
+          "essais": 1,
+          "pourquoi": "repond en FR au lieu de EN (FR 40 / EN 0 / ES 0)",
+          "extrait_echec": "Bien sûr, selon les informations que j'ai, le temps en Nice pour demain sera principalement ensoleillé avec un ciel clair et une température maximale oscillant ",
+          "tronquees": 0,
+          "ttft_s": 0.16,
+          "total_s": 1.81,
+          "reponse": "Bien sûr, selon les informations que j'ai, le temps en Nice pour demain sera principalement ensoleillé avec un ciel clair et une température maximale oscillant entre 23°C et 27°C. La brise légère soufflera tout au long de la journée, ce qui devrait rendre les activités sur la plage agréables sans être trop fraîche. En termes d'indice UV, il sera élevé (7/10), donc il est recommandé de prendre des mesures pour protéger votre peau du soleil. Pour une journée parfaite pour un séjour à la plage, cela semble être une excellente option. N'oubliez pas d'apporter une crème solaire et de vous hydrater régulièrement pour rester au frais. Bonne journée!"
+        },
+        {
+          "id": "ES-activites-en",
+          "langue": "es",
+          "reussites": 0,
+          "essais": 1,
+          "pourquoi": "repond en FR au lieu de ES (FR 63 / EN 1 / ES 2)",
+          "extrait_echec": "Si vous solo tenez un jour à visiter Madrid, voici quelques suggestions d'activités qui vous feront découvrir la ville sans vous ruiner :\n\n1. **Prado Museum** (",
+          "tronquees": 0,
+          "ttft_s": 0.18,
+          "total_s": 3.74,
+          "reponse": "Si vous solo tenez un jour à visiter Madrid, voici quelques suggestions d'activités qui vous feront découvrir la ville sans vous ruiner :\n\n1. **Prado Museum** (Musée du Prado) - Cet musée est l'une des plus grandes collections d'art au monde, avec des œuvres de Velázquez, Goya et El Greco. Il propose des entrées à 15 EUR, mais vous pouvez profiter gratuitement de la visite jusqu'à 6-8 PM. Cela vous permettra d'explorer environ deux à trois heures.\n\n2. **Retiro Park** (Parc de Retiro) - Ce grand parc central abrite un lac et offre une belle promenade. Vous pouvez louer des bateaux pour nager ou simplement vous détendre sur les berges. C'est un endroit idéal pour prendre un café ou un repas léger.\n\n3. **Royal Palace of Madrid** (Palacio Real de Madrid) - Officiellement la résidence des rois espagnols, ce palais compte 3 418 chambres. Le prix d'entrée est de 14 EUR. Bien qu'il soit un lieu impressionnant à visiter, il peut être difficile de le explorer en un jour entier.\n\n4. **Mercado de San Miguel** (Marché de San Miguel) - Ce marché historique en fer forgé propose des tapas dans ses nombreux restaurants. Le prix est payant par plat, ce qui en fait un excellent endroit pour déjeuner ou dîner.\n\nN'oubliez pas de planifier vos visites et de prévoir suffisamment de temps entre chaque attraction pour profiter pleinement de votre journée à Madrid. Bon voyage !"
+        }
+      ],
+      "scores": {
+        "langue_fr": 100.0,
+        "langue_autres": 0.0
+      },
+      "perf": {
+        "ttft_s_median": 0.17,
+        "ttft_s_max": 0.21102939999764203,
+        "total_s_median": 2.22,
+        "gen_tok_s_median": 152.24,
+        "tokens_median": 282.0,
+        "chargement_s": 4.12,
+        "tronquees": 0,
+        "thinking_chars": 0,
+        "appels": 8
+      }
+    },
+    "mistral:latest": {
+      "cases": [
+        {
+          "id": "FR-meteo",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.75,
+          "total_s": 20.18,
+          "reponse": "Le temps à Lisbonne ce week-end sera ensoleillé le samedi 27/09 avec des températures minimales de 16°C et maximales de 24°C. En revanche, le dimanche 28/09, il y aura des averses l'après-midi avec des températures minimales de 15°C et maximales de 21°C. Il y aura également 4 mm de pluie prévus pour ce jour."
+        },
+        {
+          "id": "FR-meteo-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.75,
+          "total_s": 18.95,
+          "reponse": "Oui, il y aura des pluies légères le matin à Porto demain. Il est donc conseillé d'emmener un parapluie. La température minimale sera de 14°C et la maximale de 20°C. Le vent soufflera modérément, venant du nord-ouest à une vitesse de 25 km/h. Dans l'après-midi, les pluies devraient cesser."
+        },
+        {
+          "id": "FR-vols-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.98,
+          "total_s": 30.31,
+          "reponse": "Voici les vols disponibles pour le voyage Paris-Lisbonne le 5 juin :\n\n1. TAP Air Portugal, vol TP437, départs à 07:15 avec un tarif de 142,30 € (baggage : cabin bag only, checked bag extra)\n2. Air France, vol AF1024, départs à 12:40 avec un tarif de 189,00 € (baggage : 1 checked bag included)\n3. Transavia, vol TO7630, départs à 18:05 avec un tarif de 96,50 € (baggage : personal item only)\n\nJe vous souhaite une bonne continuation pour votre voyage !"
+        },
+        {
+          "id": "FR-activites-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.9,
+          "total_s": 50.97,
+          "reponse": "Il y a plusieurs activités à Rome qui sont parfaites pour les enfants. Voici quelques suggestions :\n\n1. Explora - Children's Museum of Rome : C'est un musée interactif conçu pour les enfants de 12 ans et moins, avec des expositions interactives sur la science, la ville et l'environnement. Le prix est de 9 EUR par enfant.\n\n2. Bioparco di Roma : C'est le zoo de Rome situé dans le parc Villa Borghese. Il abrite plus de 1000 animaux différents. Le prix est de 18 EUR pour les adultes et 14 EUR pour les enfants.\n\n3. Time Elevator Rome : C'est une expérience cinématographique 5D qui vous emmène à travers 3000 ans d'histoire romaine en 45 minutes. Le prix est de 12 EUR.\n\n4. Villa Borghese Gardens : C'est un grand parc paysager où vous pouvez louer des vélos, des bateaux à rames et des charrettes à roulettes. L'entrée est gratuite."
+        },
+        {
+          "id": "FR-itineraire-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 3.45,
+          "total_s": 61.39,
+          "reponse": "Voici un itinéraire pour Barcelone du 14 au 16 mai :\n\nLe 14 mai, le temps est ensoleillé et chaud avec une température maximale prévue à 24°C. Je recommande de commencer votre journée par la visite de la Sagrada Familia, l'imposante basilique de Gaudi qui nécessite des billets d'avance. Vous pouvez y passer environ 1,5 heure.\n\nLe 15 mai, il y a des orages prévus dans l'après-midi. Je recommande donc de commencer votre journée par une visite intérieure au Musée Picasso qui abrite plus de 4 000 œuvres de Pablo Picasso. Le musée est situé dans le quartier du Born.\n\nLe 16 mai, le temps est en partie nuageux avec une température maximale prévue à 23°C. Je recommande de commencer votre journée par une visite au Parc Guell, un parc coloré conçu par Gaudi qui offre des vues panoramiques sur la ville. Après, vous pouvez aller prendre un soleil sur Barceloneta Beach, la plage la plus populaire de la ville. Enfin, je recommande de visiter le marché La Boqueria, un marché couvert fameux situé sur La Rambla, qui est le meilleur à visiter au matin."
+        },
+        {
+          "id": "FR-vide-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.67,
+          "total_s": 7.35,
+          "reponse": "Non, il n'y a pas de vol direct Lille-Tokyo le 3 mars 2027. Cependant, des vols en correspondance sont disponibles via CDG ou AMS."
+        },
+        {
+          "id": "EN-meteo-fr",
+          "langue": "en",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.66,
+          "total_s": 16.52,
+          "reponse": "The weather in Nice tomorrow is expected to be sunny with light breezes. The minimum temperature will be 19 degrees Celsius and the maximum temperature will reach 27 degrees Celsius. The sea temperature will be around 23 degrees Celsius. The UV index will be 7, so remember to apply sunscreen if you plan on spending a lot of time outside. It seems like it would be a great day for a beach visit!"
+        },
+        {
+          "id": "ES-activites-en",
+          "langue": "es",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.84,
+          "total_s": 51.69,
+          "reponse": "Si solo tienes un día en Madrid, te recomiendo visitar los siguientes lugares:\n\n1. El Museo del Prado (Prado Museum): Es uno de los museos de arte más importantes del mundo, con obras de Velázquez, Goya y El Greco. Te recomiendo dedicar al menos 2-3 horas para visitarlo. El precio es de 15 EUR, pero es gratis de 6 a 8pm.\n\n2. El Parque del Retiro (Retiro Park): Es un gran parque central con un lago donde puedes alquilar botes a remo. Es un lugar ideal para relajarte y disfrutar de la naturaleza. El acceso es gratuito.\n\n3. El Palacio Real de Madrid (Royal Palace of Madrid): Es la residencia oficial de la familia real española, con 3,418 habitaciones. El precio del ingreso es de 14 EUR.\n\n4. El Mercado de San Miguel (Mercado de San Miguel): Es un histórico mercado de hierro con puestos de tapas. Es un lugar ideal para tomar algo de comer en el medio del día. El precio varía según lo que compres."
+        }
+      ],
+      "scores": {
+        "langue_fr": 100.0,
+        "langue_autres": 100.0
+      },
+      "perf": {
+        "ttft_s_median": 0.8,
+        "ttft_s_max": 3.454768090003199,
+        "total_s_median": 25.24,
+        "gen_tok_s_median": 6.11,
+        "tokens_median": 149.5,
+        "chargement_s": 6.17,
+        "tronquees": 0,
+        "thinking_chars": 0,
+        "appels": 8
+      }
+    },
+    "qwen2.5:7b": {
+      "cases": [
+        {
+          "id": "FR-meteo",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.96,
+          "total_s": 16.29,
+          "reponse": "Ce week-end à Lisbonne, il fera ensoleillé samedi 27 septembre avec une température minimale de 16°C et maximale de 24°C. Dimanche 28 septembre, il y aura des averses l'après-midi et la température oscillera entre 15°C et 21°C avec 4 mm de pluie prévus."
+        },
+        {
+          "id": "FR-meteo-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.85,
+          "total_s": 15.68,
+          "reponse": "Oui, il va pleuvoir à Porto demain matin avec des averses légères. La probabilité de pluie est de 70%, et il pourrait pleuvoir jusqu'à 3,2 mm. Bien que le temps se clairse l'après-midi, je vous recommande d'emporter un parapluie pour la matinée."
+        },
+        {
+          "id": "FR-vols-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 1.03,
+          "total_s": 66.77,
+          "reponse": "Voici les options de vol Paris-Lisbonne le 5 juin que je peux vous proposer :\n\n1. Vol opéré par TAP Air Portugal :\n   - Numéro de vol : TP437\n   - Départ de Paris-Charles-de-Gaulle (CDG) à 07:15\n   - Arrivée à Lisbonne à 08:50\n   - Prix total : 142,30 €\n   - Bagages : Valise cabine uniquement, bagage valise supplémentaire possible\n\n2. Vol opéré par Air France :\n   - Numéro de vol : AF1024\n   - Départ de Paris-Charles-de-Gaulle (CDG) à 12:40\n   - Arrivée à Lisbonne à 14:20\n   - Prix total : 189,00 €\n   - Bagages : 1 bagage valise inclus\n\n3. Vol opéré par Transavia :\n   - Numéro de vol : TO7630\n   - Départ de Paris-Charles-de-Gaulle (CDG) à 18:05\n   - Arrivée à Lisbonne à 19:45\n   - Prix total : 96,50 €\n   - Bagages : Sac personnel uniquement\n\nCes informations sont basées sur les données disponibles pour le vol Paris-Lisbonne le 5 juin 2027. Je vous recommande de vérifier directement auprès des compagnies aériennes pour obtenir les détails les plus récents et pour effectuer votre réservation."
+        },
+        {
+          "id": "FR-activites-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.99,
+          "total_s": 56.58,
+          "reponse": "À Rome, vous pouvez profiter de plusieurs activités familiales intéressantes pour vos enfants :\n\n1. **Explora - Children's Museum of Rome** : C'est un musée interactif conçu spécialement pour les enfants âgés de moins de 12 ans. Ils peuvent découvrir la science, la ville et l'environnement par eux-mêmes grâce aux nombreux exposants pratiques. Le coût est de 9 EUR par enfant.\n\n2. **Bioparco di Roma** : C'est un zoo situé à l'intérieur du parc Villa Borghese, abritant plus de 1000 animaux différents. C'est une excellente option pour passer la moitié d'une journée avec vos enfants. Les tarifs sont de 18 EUR par adulte et 14 EUR par enfant.\n\n3. **Time Elevator Rome** : Pour les enfants curieux, cette expérience cinématographique en 5D vous emmène à travers 3000 ans d'histoire romaine en seulement 45 minutes. Le coût est de 12 EUR par personne.\n\n4. **Villa Borghese Gardens** : C'est un grand parc paysager où vous pouvez louer des vélos, des bateaux à ramer et des chariots à pédale. L'entrée est gratuite pour tous.\n\nCes activités offrent une variété d'options pour s'amuser et apprendre ensemble en famille à Rome !"
+        },
+        {
+          "id": "FR-itineraire-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 1.15,
+          "total_s": 78.21,
+          "reponse": "Voici un itinéraire de 3 jours pour Barcelone du 14 au 16 mai, en tenant compte des prévisions météorologiques :\n\nJour 1 (14 mai) - Samedi : \n- Matin : Commencez votre journée par une visite du Musée Picasso. C'est un endroit idéal pour profiter de l'art intérieur et éviter la chaleur estivale.\n- Après-midi : Visitez le célèbre Sagrada Familia, même si vous ne pouvez pas entrer à l'intérieur en raison des restrictions d'espace, vous pouvez toujours admirer son architecture impressionnante. \n- Soirée : Profitez de la vue panoramique depuis Park Guell et dégustez un repas dans l'un des nombreux restaurants de la Barceloneta Beach.\n\nJour 2 (15 mai) - Dimanche : \n- Matin : Visitez le marché de La Boqueria, où vous pourrez découvrir une variété d'aliments locaux. Il est recommandé de visiter tôt dans la matinée.\n- Après-midi : Évitez l'après-midi en raison des prévisions de tempêtes. Vous pouvez profiter du musée Picasso ou du Park Guell, qui sont tous deux à l'intérieur.\n\nJour 3 (16 mai) - Lundi : \n- Matin : Profitez d'une journée ensoleillée pour une promenade sur la plage de Barceloneta.\n- Après-midi : Terminez votre séjour avec une visite du Sagrada Familia, qui est ouvert même si le bâtiment n'est pas entièrement terminé.\n\nN'oubliez pas de vérifier les horaires d'ouverture et de réserver vos billets pour le Sagrada Familia en avance. Bon voyage à Barcelone !"
+        },
+        {
+          "id": "FR-vide-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.86,
+          "total_s": 11.52,
+          "reponse": "D'après les informations fournies, il n'y a pas de vol direct Lille-Tokyo le 3 mars 2027. Des vols en correspondance sont disponibles via Paris-Charles-de-Gaulle (CDG) ou Amsterdam (AMS)."
+        },
+        {
+          "id": "EN-meteo-fr",
+          "langue": "en",
+          "reussites": 0,
+          "essais": 1,
+          "pourquoi": "repond en FR au lieu de EN (FR 22 / EN 0 / ES 0)",
+          "extrait_echec": "Selon les prévisions météorologiques, demain à Nice il fera grand soleil avec une température minimale de 19°C et maximale de 27°C. La température de l'eau sera",
+          "tronquees": 0,
+          "ttft_s": 0.88,
+          "total_s": 22.03,
+          "reponse": "Selon les prévisions météorologiques, demain à Nice il fera grand soleil avec une température minimale de 19°C et maximale de 27°C. La température de l'eau sera de 23°C, ce qui devrait être parfait pour une journée au bord de la mer. Néanmoins, l'indice UV est assez élevé avec un niveau de 7, donc n'oubliez pas votre crème solaire. Vous pouvez sans hésiter planifier une journée à la plage !"
+        },
+        {
+          "id": "ES-activites-en",
+          "langue": "es",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.94,
+          "total_s": 55.29,
+          "reponse": "Si tienes solo un día para visitar Madrid, aquí te presento algunas sugerencias basadas en las actividades disponibles:\n\n1. **Prado Museum** - Uno de los museos de arte más grandes del mundo con obras de artistas como Velázquez, Goya y El Greco. Te recomendaría dedicar al menos 2-3 horas para poder apreciar la colección completa. Ten en cuenta que el precio es de 15 EUR, pero puedes entrar gratis entre las 6 y las 8 de la tarde.\n\n2. **Retiro Park** - Un gran parque central con un lago donde podrás alquilar barcos a remo. Es una excelente opción para relajarte o hacer un paseo. La entrada es gratuita.\n\n3. **Royal Palace of Madrid** - El palacio oficial de la familia real española, con 3,418 habitaciones. El precio de la entrada es de 14 EUR. Asegúrate de reservar en línea para evitar largas colas.\n\n4. **Mercado de San Miguel** - Un mercado histórico con estantes de tapas que es perfecto para almorzar. Los precios varían según el plato elegido, pero es una excelente manera de probar la gastronomía local.\n\nEstas actividades te permitirán disfrutar de la rica cultura y la hermosa arquitectura de Madrid en un solo día."
+        }
+      ],
+      "scores": {
+        "langue_fr": 100.0,
+        "langue_autres": 50.0
+      },
+      "perf": {
+        "ttft_s_median": 0.95,
+        "ttft_s_max": 1.1529845639997802,
+        "total_s_median": 38.66,
+        "gen_tok_s_median": 5.64,
+        "tokens_median": 210.5,
+        "chargement_s": 8.56,
+        "tronquees": 0,
+        "thinking_chars": 0,
+        "appels": 8
+      }
+    },
+    "llama3.1:8b": {
+      "cases": [
+        {
+          "id": "FR-meteo",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 1.13,
+          "total_s": 16.73,
+          "reponse": "Ce week-end, il fera ensoleillé à Lisbonne le samedi avec une température maximale de 24°C et minimale de 16°C. Le dimanche, il y aura des averses l'après-midi avec une température maximale de 21°C et minimale de 15°C."
+        },
+        {
+          "id": "FR-meteo-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 1.2,
+          "total_s": 15.38,
+          "reponse": "\"Oui, il y a une chance que ça pleuve à Porto demain. La prévision météo indique des pluies légères en matinée qui devraient s'éclaircir en après-midi. Il faudrait donc prendre un parapluie pour être prêt à toute éventualité.\""
+        },
+        {
+          "id": "FR-vols-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 1.31,
+          "total_s": 43.78,
+          "reponse": "Je peux vous aider à trouver un vol pour Paris-Lisbonne le 5 juin.\n\nVoici les options disponibles :\n\n* TAP Air Portugal : \n + Départ : 07h15\n + Arrivée : 08h50\n + Prix : 142,30 €\n + Bagages : Seul bagage cabine inclus, bagage enregistré supplémentaire\n* Air France : \n + Départ : 12h40\n + Arrivée : 14h20\n + Prix : 189,00 €\n + Bagages : 1 bagage enregistré inclus\n* Transavia : \n + Départ : 18h05\n + Arrivée : 19h45\n + Prix : 96,50 €\n + Bagages : Seul article personnel inclus\n\nJ'espère que cela vous aidera à trouver le vol qui convient le mieux à vos besoins."
+        },
+        {
+          "id": "FR-activites-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 1.12,
+          "total_s": 51.33,
+          "reponse": "Pour une visite à Rome avec des enfants, il y a plusieurs activités qui peuvent être intéressantes pour toute la famille.\n\nL'Explora - Children's Museum of Rome est un excellent choix. Il s'agit d'un musée interactif conçu pour les enfants de moins de 12 ans, avec des expositions pratiques sur la science, la ville et l'environnement. Les tarifs sont raisonnables à 9 euros par enfant.\n\nLe Bioparco di Roma est également une bonne option. Il s'agit du zoo de la ville situé dans le parc Villa Borghese, qui abrite plus d'un millier d'animaux. C'est idéal pour une visite de demi-journée. Les tarifs sont de 18 euros par adulte et 14 euros par enfant.\n\nLe Time Elevator Rome est un autre choix intéressant. Il s'agit d'une expérience cinématographique en 5D qui vous emmène à travers 3 000 ans d'histoire romaine en 45 minutes. Les tarifs sont de 12 euros.\n\nEnfin, les jardins de Villa Borghese offrent également beaucoup de choses à faire. Vous pouvez louer des vélos, des bateaux et des tricycles pour explorer le parc. L'entrée est gratuite.\n\nCes activités devraient vous permettre de passer un bon moment avec vos enfants à Rome."
+        },
+        {
+          "id": "FR-itineraire-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.92,
+          "total_s": 73.64,
+          "reponse": "Bien sûr ! Voici un itinéraire de 3 jours à Barcelone du 14 au 16 mai, en tenant compte de la météo :\n\n**Jour 1 : 14 mai (Soleil)**\n\n* Matinée : Commencez par visiter le célèbre parc **Park Guell**, conçu par Gaudi. Puisque il fait soleil, vous pourrez profiter des jolies couleurs et des vues panoramiques sur la ville.\n* Après-midi : Après avoir visité Park Guell, allez à la plage de **Barceloneta Beach** pour profiter du soleil et de la mer. Vous pouvez également essayer les restaurants de fruits de mer qui bordent la plage.\n\n**Jour 2 : 15 mai (Orages prévus en après-midi)**\n\n* Matinée : Commencez par visiter le **Picasso Museum**, situé dans le quartier du Born. Puisque vous aurez besoin d'un peu de temps à l'intérieur, c'est un excellent choix pour cette journée.\n* Après-midi : Après avoir visité le musée Picasso, allez au marché couvert de **La Boqueria** pour essayer quelques spécialités culinaires locales. Puisque les orages sont prévus en après-midi, vous pouvez éviter d'aller à la plage ou dans un parc extérieur.\n\n**Jour 3 : 16 mai (Partiellement nuageux)**\n\n* Matinée : Commencez par visiter la célèbre basilique **Sagrada Familia**, conçue par Gaudi. Puisque vous aurez besoin d'un peu de temps à l'intérieur, c'est un excellent choix pour cette journée.\n* Après-midi : Après avoir visité Sagrada Familia, allez au parc **Park Guell** (encore une fois !) pour profiter des jolies couleurs et des vues panoramiques sur la ville.\n\nJ'espère que vous apprécierez cet itinéraire ! N'hésitez pas à me poser d'autres questions si vous avez besoin de plus de détails."
+        },
+        {
+          "id": "FR-vide-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.7,
+          "total_s": 7.3,
+          "reponse": "\"Je suis désolé, mais il n'y a pas de vol direct Lille-Tokyo le 3 mars. Cependant, des vols avec escales sont disponibles via Paris (CDG) ou Amsterdam (AMS).\""
+        },
+        {
+          "id": "EN-meteo-fr",
+          "langue": "en",
+          "reussites": 0,
+          "essais": 1,
+          "pourquoi": "repond en FR au lieu de EN (FR 22 / EN 0 / ES 0)",
+          "extrait_echec": "\"Bonjour ! Selon les prévisions météorologiques, demain à Nice il fera grand soleil avec une température maximale de 27°C et minimale de 19°C. La mer sera tiède",
+          "tronquees": 0,
+          "ttft_s": 0.71,
+          "total_s": 16.72,
+          "reponse": "\"Bonjour ! Selon les prévisions météorologiques, demain à Nice il fera grand soleil avec une température maximale de 27°C et minimale de 19°C. La mer sera tiède avec une température de 23°C. Il y aura également une brise légère. L'indice UV est élevé (7), donc n'oubliez pas votre crème solaire ! Cela devrait être parfait pour un jour de plage ! Alors, oui, planifiez votre journée de plage à Nice demain !\""
+        },
+        {
+          "id": "ES-activites-en",
+          "langue": "es",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.81,
+          "total_s": 35.47,
+          "reponse": "Si solo tienes un día en Madrid, te recomiendo visitar algunos de los lugares más emblemáticos de la ciudad. Primero, te sugiero ir al Museo del Prado, uno de los mejores museos de arte del mundo. Puedes disfrutar de obras maestras de Velázquez, Goya y El Greco, entre otros artistas famosos. Recuerda que el precio es de 15 euros, pero puedes entrar gratis de 6 a 8 pm.\n\nDespués de visitar el Prado, te invito a relajarte en el Parque del Retiro, un gran parque central con un lago donde puedes alquilar barcas para remar. Lo mejor de todo es que es gratuito.\n\nSi tienes tiempo y energía, también puedes visitar el Palacio Real de Madrid, la residencia oficial de la familia real española, que cuenta con 3.418 habitaciones. El precio es de 14 euros.\n\nFinalmente, si buscas algo para comer, te recomiendo ir al Mercado de San Miguel, un mercado histórico con puestos de tapas donde puedes disfrutar de una comida deliciosa y pagar solo por lo que comas."
+        }
+      ],
+      "scores": {
+        "langue_fr": 100.0,
+        "langue_autres": 50.0
+      },
+      "perf": {
+        "ttft_s_median": 1.02,
+        "ttft_s_max": 1.3055530120000185,
+        "total_s_median": 26.1,
+        "gen_tok_s_median": 6.35,
+        "tokens_median": 158.5,
+        "chargement_s": 10.45,
+        "tronquees": 0,
+        "thinking_chars": 0,
+        "appels": 8
+      }
+    },
+    "mistral-nemo:12b": {
+      "cases": [
+        {
+          "id": "FR-meteo",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 1.14,
+          "total_s": 23.5,
+          "reponse": "Ce week-end à Lisbonne, le temps sera généralement ensoleillé. Samedi 27 septembre, les températures minimales seront de 16°C et maximales de 24°C. Le dimanche 28 septembre, il fera un peu plus frais avec des températures minimales de 15°C et maximales de 21°C. Attention toutefois à l'après-midi du dimanche où quelques averses sont prévues."
+        },
+        {
+          "id": "FR-meteo-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 1.13,
+          "total_s": 21.28,
+          "reponse": "D'après les prévisions météorologiques pour Porto demain, il est prévu des averses légères le matin, mais le temps devrait s'améliorer dans l'après-midi. Il y a une probabilité de 70% de précipitations, avec une quantité totale attendue de 3,2 mm. Il serait donc judicieux de prendre un parapluie pour vous protéger de la pluie."
+        },
+        {
+          "id": "FR-vols-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 1.55,
+          "total_s": 49.77,
+          "reponse": "Voici les résultats pour un vol Paris-Lisbonne le 5 juin :\n\n1. TAP Air Portugal (TP437) :\nDépart : 07:15\nArrivée : 08:50\nPrix total : 142,30 €\nBagages : Cabine uniquement, bagages enregistrés supplémentaires\n\n2. Air France (AF1024) :\nDépart : 12:40\nArrivée : 14:20\nPrix total : 189,00 €\nBagages : 1 bagage enregistré inclus\n\n3. Transavia (TO7630) :\nDépart : 18:05\nArrivée : 19:45\nPrix total : 96,50 €\nBagages : Objet personnel uniquement"
+        },
+        {
+          "id": "FR-activites-en",
+          "langue": "fr",
+          "reussites": 0,
+          "essais": 1,
+          "pourquoi": "repond en EN au lieu de FR (FR 0 / EN 44 / ES 0)",
+          "extrait_echec": "If you're visiting Rome with kids, here are some great family-friendly activities to consider:\n\n1. **Explora - Children's Museum of Rome**: This interactive mus",
+          "tronquees": 0,
+          "ttft_s": 1.27,
+          "total_s": 76.66,
+          "reponse": "If you're visiting Rome with kids, here are some great family-friendly activities to consider:\n\n1. **Explora - Children's Museum of Rome**: This interactive museum is designed specifically for children under 12 and offers hands-on exhibits about science, the city, and the environment. It's a fantastic place for them to learn while having fun. The price is 9 EUR per child.\n   - Rating: 4.5 stars\n   - Price: 9 EUR per child\n\n2. **Bioparco di Roma**: Located within Villa Borghese park, this city zoo is home to over 1,000 animals and makes for a perfect half-day visit. Kids will love seeing the diverse wildlife up close.\n   - Rating: 4.3 stars\n   - Price: 18 EUR adult, 14 EUR child\n\n3. **Time Elevator Rome**: Experience 3,000 years of Roman history in just 45 minutes with this immersive 5D cinema attraction. It's both educational and entertaining for the whole family.\n   - Rating: 4.4 stars\n   - Price: 12 EUR\n\n4. **Villa Borghese Gardens**: This large landscaped park offers free entry and plenty of space for kids to run around. You can also rent bikes, rowing boats, or pedal carts for some active fun.\n   - Rating: 4.7 stars\n   - Price: Free entry"
+        },
+        {
+          "id": "FR-itineraire-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 1.38,
+          "total_s": 85.92,
+          "reponse": "Bonjour ! Voici un itinéraire pour votre séjour de 3 jours à Barcelone du 14 au 16 mai, en tenant compte de la météo :\n\nJour 1 (14 mai) : Sunny\nVisitez la célèbre Sagrada Familia le matin. Réservez vos billets à l'avance et prévoyez environ 1,5 heure pour la visite. Ensuite, dirigez-vous vers le parc Güell pour admirer les vues panoramiques sur la ville depuis ce parc coloré conçu par Gaudí.\n\nJour 2 (15 mai) : Thunderstorms expected in the afternoon\nLe matin, visitez le musée Picasso pour découvrir plus de 4000 œuvres de l'artiste datant de ses premières années. Ensuite, profitez du temps ensoleillé pour vous promener sur la Rambla et visiter La Boqueria Market, un marché couvert célèbre pour ses produits alimentaires frais.\n\nDans l'après-midi, lorsque les orages sont attendus, réfugiez-vous à l'intérieur en visitant le musée national d'art de Catalogne ou en flânant dans les rues pittoresques du quartier gothique.\n\nJour 3 (16 mai) : Partly cloudy\nLe dernier jour, profitez du temps partly cloudy pour vous détendre sur la plage de Barceloneta. Cette plage populaire est bordée de restaurants de fruits de mer où vous pouvez déguster des spécialités locales. Si le temps le permet, vous pouvez également faire une promenade le long de la marina.\n\nJ'espère que cet itinéraire vous aidera à profiter au mieux de votre séjour à Barcelone !"
+        },
+        {
+          "id": "FR-vide-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 1.06,
+          "total_s": 12.74,
+          "reponse": "Je suis désolé, mais il n'y a pas de vol direct disponible entre Lille et Tokyo le 3 mars 2027. Cependant, des vols avec escale sont disponibles via les aéroports CDG ou AMS."
+        },
+        {
+          "id": "EN-meteo-fr",
+          "langue": "en",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 1.05,
+          "total_s": 19.32,
+          "reponse": "The weather in Nice tomorrow is expected to be sunny with a light breeze. The minimum temperature will be around 19°C and the maximum temperature will reach 27°C. The sea temperature is 23°C, which makes it perfect for a beach day! With an UV index of 7, don't forget your sunscreen. Enjoy your time at the beach!"
+        },
+        {
+          "id": "ES-activites-en",
+          "langue": "es",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 1.21,
+          "total_s": 51.91,
+          "reponse": "Si tienes un día para visitar Madrid, te recomiendo que visites el Museo del Prado. Es uno de los museos de arte más importantes del mundo y cuenta con obras maestras de artistas como Velázquez, Goya y El Greco. Te sugiero que reserves al menos 2-3 horas para explorar el museo.\n\nDespués de visitar el Museo del Prado, puedes dar un paseo por el Parque del Retiro, un gran parque central donde puedes alquilar barcas de remo para navegar en su lago.\n\nSi te interesa la historia y la arquitectura, no te pierdas el Palacio Real de Madrid, la residencia oficial de la familia real española. Cuenta con 3,418 habitaciones que puedes explorar por un precio de 14 EUR.\n\nPara almorzar, te recomiendo visitar el Mercado de San Miguel, un mercado histórico de hierro con puestos de tapas donde puedes probar diferentes platos españoles.\n\nEspero que disfrutes tu día en Madrid!"
+        }
+      ],
+      "scores": {
+        "langue_fr": 83.3,
+        "langue_autres": 100.0
+      },
+      "perf": {
+        "ttft_s_median": 1.17,
+        "ttft_s_max": 1.5538080930018623,
+        "total_s_median": 36.63,
+        "gen_tok_s_median": 4.09,
+        "tokens_median": 138.5,
+        "chargement_s": 10.65,
+        "tronquees": 0,
+        "thinking_chars": 0,
+        "appels": 8
+      }
+    },
+    "qwen3:8b (nothink)": {
+      "cases": [
+        {
+          "id": "FR-meteo",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.76,
+          "total_s": 12.64,
+          "reponse": "À Lisbonne ce week-end, voici les prévisions météorologiques :\n\n- **Samedi 27/09** : Ensoleillé, avec des températures allant de 16°C à 24°C.\n- **Dimanche 28/09** : Averses l'après-midi, températures entre 15°C et 21°C.\n\nBonne semaine !"
+        },
+        {
+          "id": "FR-meteo-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.73,
+          "total_s": 16.46,
+          "reponse": "Il va pleuvoir légèrement à Porto demain matin, mais les averses s'arrêteront vers l'après-midi. La probabilité de pluie est de 70 %, avec une précipitation estimée à 3,2 mm. Il fait prévu une température entre 14°C et 20°C, accompagnée d'un vent modéré venant du nord-ouest à 25 km/h.\n\nIl serait donc judicieux de prendre un parapluie, surtout en début de journée."
+        },
+        {
+          "id": "FR-vols-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.92,
+          "total_s": 41.83,
+          "reponse": "Voici quelques vols disponibles pour le trajet Paris (CDG) - Lisbonne (LIS) le 5 juin 2027 :\n\n1. **TAP Air Portugal - Vol TP437**  \n   - Départ : 07:15  \n   - Arrivée : 08:50  \n   - Durée : 1 heure 35 minutes  \n   - Prix : 142,30 €  \n   - Bagages : Sac à main uniquement, bagage en soute payant  \n\n2. **Air France - Vol AF1024**  \n   - Départ : 12:40  \n   - Arrivée : 14:20  \n   - Durée : 1 heure 40 minutes  \n   - Prix : 189,00 €  \n   - Bagages : 1 bagage en soute inclus  \n\n3. **Transavia - Vol TO7630**  \n   - Départ : 18:05  \n   - Arrivée : 19:45  \n   - Durée : 1 heure 40 minutes  \n   - Prix : 96,50 €  \n   - Bagages : Article de cabine uniquement  \n\nN’hésitez pas à me demander si vous souhaitez des informations supplémentaires ou des réservations !"
+        },
+        {
+          "id": "FR-activites-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.85,
+          "total_s": 48.41,
+          "reponse": "Voici quelques idées d'activités à Rome adaptées aux enfants :\n\n1. **Explora - Children's Museum of Rome**  \n   Un musée interactif conçu pour les enfants de moins de 12 ans, avec des expositions ludiques sur la science, la ville et l'environnement.  \n   **Prix** : 9 € par enfant  \n   **Note** : 4.5/5  \n\n2. **Bioparco di Roma**  \n   Un zoo situé dans le parc Villa Borghese, accueillant plus de 1 000 animaux. Idéal pour une visite d'une demi-journée.  \n   **Prix** : 18 € pour un adulte, 14 € pour un enfant  \n   **Note** : 4.3/5  \n\n3. **Time Elevator Rome**  \n   Une expérience de cinéma 5D qui vous emmène à travers 3 000 ans d'histoire romaine en 45 minutes.  \n   **Prix** : 12 €  \n   **Note** : 4.4/5  \n\n4. **Villa Borghese Gardens**  \n   Un grand parc paysager où vous pouvez louer des vélos, des bateaux à rame et des chariots à pédales.  \n   **Prix** : Entrée gratuite  \n   **Note** : 4.7/5  \n\nCes activités offrent une excellente combinaison de culture, nature et loisirs pour les enfants. Bonnes vacances à Rome ! 🇮🇹"
+        },
+        {
+          "id": "FR-itineraire-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 1,
+          "ttft_s": 0.95,
+          "total_s": 102.21,
+          "reponse": "Voici un itinéraire de 3 jours à Barcelone du **14 au 16 mai 2027**, en tenant compte de la météo et des activités proposées :\n\n---\n\n### 📅 **Jour 1 : Mercredi 14 mai – Temps : Ensoleillé, max 24°C**\n\n**Matin :**  \n- **La Boqueria Market** (indoor)  \n  Visitez le célèbre marché couvert sur La Rambla, idéal pour déguster des spécialités locales et acheter des produits frais. C’est une activité à faire en début de journée.\n\n**Après-midi :**  \n- **Sagrada Familia** (indoor)  \n  Découvrez l’œuvre inachevée de Gaudí. Il est conseillé de réserver vos billets à l’avance, car les visites durent environ 1,5 heure.\n\n**Soir :**  \n- **Barceloneta Beach** (indoor)  \n  Profitez de la plage la plus populaire de la ville. Avec le soleil, c’est le moment idéal pour se détendre et dîner dans un restaurant de plage.\n\n---\n\n### 📅 **Jour 2 : Jeudi 15 mai – Temps : Orages en après-midi, max 21°C**\n\n**Matin :**  \n- **La Boqueria Market** (indoor)  \n  Même si la météo est un peu plus fraîche, le marché reste une excellente option pour le petit-déjeuner ou un déjeuner léger.\n\n**Après-midi :**  \n- **Picasso Museum** (indoor)  \n  Explorez plus de 4 000 œuvres de Picasso, situées dans le quartier de Born. C’est une visite culturelle idéale en cas de pluie.\n\n**Soir :**  \n- **Dîner en ville**  \n  Évitez de sortir en après-midi, car des orages sont prévus. Optez pour un restaurant typique dans le centre-ville ou dans le quartier de Gràcia.\n\n---\n\n### 📅 **Jour 3 : Vendredi 16 mai – Temps : Partiellement nuageux, max 23°C**\n\n**Matin :**  \n- **Park Güell** (indoor : non)  \n  Découvrez le parc coloré de Gaudí avec ses escaliers et ses vues panoramiques sur la ville. C’est une activité extérieure idéale pour un temps nuageux.\n\n**Après-midi :**  \n- **Visite libre ou shopping**  \n  Si vous avez encore de l’énergie, vous pouvez visiter le quartier de El Raval ou faire du shopping dans les rues de Gràcia. Sinon, profitez d’un moment détendu dans un café.\n\n**Soir :**  \n- **Dîner en terrasse**  \n  Avec un ciel partiellement nuageux, vous pouvez profiter d’un dîner en terrasse dans un restaurant de la Rambla ou dans un quartier animé comme El Born.\n\n---\n\n### 📌 Conse"
+        },
+        {
+          "id": "FR-vide-en",
+          "langue": "fr",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.71,
+          "total_s": 8.96,
+          "reponse": "Il n'y a pas de vol direct Lille-Tokyo le 3 mars 2027. Les vols directs ne sont pas disponibles pour cette route et cette date. Cependant, des vols avec escale sont disponibles via Paris (CDG) ou Amsterdam (AMS)."
+        },
+        {
+          "id": "EN-meteo-fr",
+          "langue": "en",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.68,
+          "total_s": 9.68,
+          "reponse": "The weather in Nice tomorrow will be sunny with a light breeze. The temperature will range from 19°C to 27°C, and the sea temperature will be 23°C. The UV index is 7, so don't forget to protect yourself from the sun. It sounds like a perfect day for a beach outing!"
+        },
+        {
+          "id": "ES-activites-en",
+          "langue": "es",
+          "reussites": 1,
+          "essais": 1,
+          "pourquoi": "",
+          "extrait_echec": "",
+          "tronquees": 0,
+          "ttft_s": 0.81,
+          "total_s": 34.26,
+          "reponse": "Si solo tienes un día en Madrid, aquí tienes algunas sugerencias de actividades que puedes visitar:\n\n1. **Museo del Prado**  \n   Uno de los museos de arte más importantes del mundo, con obras de Velázquez, Goya y El Greco. Te recomiendo dedicarle al menos 2-3 horas.  \n   **Precio:** 15 EUR, gratis de 6 a 8 pm.\n\n2. **Parque del Retiro**  \n   Un gran parque central con un lago donde puedes alquilar barcos de remos. Es ideal para relajarte y disfrutar del aire libre.  \n   **Precio:** Gratis.\n\n3. **Palacio Real de Madrid**  \n   La residencia oficial de la familia real española, con más de 3.400 habitaciones.  \n   **Precio:** 14 EUR.\n\n4. **Mercado de San Miguel**  \n   Un histórico mercado de hierro con puestos de tapas, perfecto para almorzar o tomar algo.  \n   **Precio:** Pago por plato.\n\n¡Disfruta de tu día en Madrid! 🇪🇸"
+        }
+      ],
+      "scores": {
+        "langue_fr": 100.0,
+        "langue_autres": 100.0
+      },
+      "perf": {
+        "ttft_s_median": 0.78,
+        "ttft_s_max": 0.9483424230020319,
+        "total_s_median": 25.36,
+        "gen_tok_s_median": 7.5,
+        "tokens_median": 183.0,
+        "chargement_s": 8.62,
+        "tronquees": 1,
+        "thinking_chars": 0,
+        "appels": 8
+      }
+    }
+  }
+}

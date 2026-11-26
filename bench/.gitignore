@@ -1,0 +1,3 @@
+# results/ est versionne expres : c'est ce qui justifie le choix des modeles.
+__pycache__/
+*.pyc

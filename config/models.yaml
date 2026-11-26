@@ -1,0 +1,11 @@
+tool_models:
+  - qwen3:8b
+  - mistral
+
+response_models:
+  - qwen3:8b
+  - mistral
+
+default_tool_model: qwen3:8b
+default_response_model: qwen3:8b
+default_pii_check_model: qwen3:8b

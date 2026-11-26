@@ -1,0 +1,972 @@
+{
+  "meta": {
+    "date": "2026-09-24T12:21:36+00:00",
+    "machine": "thomas-ASUS-TUF-Dash-F15-FX517ZE-TUF517ZE",
+    "os": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "repetitions": 1,
+    "mode": "triage",
+    "ponderation": {
+      "outils": 0.3,
+      "vitesse": 0.25,
+      "json": 0.15,
+      "raisonnement": 0.15,
+      "consignes": 0.08,
+      "francais": 0.07
+    }
+  },
+  "models": {
+    "granite3.1-moe:latest": {
+      "cases": [
+        {
+          "categorie": "outils",
+          "id": "T-simple",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "attendu weather, obtenu None"
+        },
+        {
+          "categorie": "outils",
+          "id": "T-meteo-1",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "attendu weather, obtenu None"
+        },
+        {
+          "categorie": "outils",
+          "id": "T-vol-1",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "attendu flights_search, obtenu None"
+        },
+        {
+          "categorie": "outils",
+          "id": "T-act-1",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "attendu activity_search, obtenu None"
+        },
+        {
+          "categorie": "outils",
+          "id": "T-budget",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "attendu budget, obtenu None"
+        },
+        {
+          "categorie": "outils",
+          "id": "T-none-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-none-3",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-absent",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "M-deux",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "outils obtenus : aucun"
+        },
+        {
+          "categorie": "json",
+          "id": "J-extraction",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "raisonnement",
+          "id": "R-budget",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "attendu 220, nombres trouves : [75.0, 120.0, 65.0, 4.0, 4.0]"
+        },
+        {
+          "categorie": "raisonnement",
+          "id": "R-contrainte",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "attendu 2, nombres trouves : [3.0]"
+        },
+        {
+          "categorie": "consignes",
+          "id": "C-oui-non",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "francais",
+          "id": "F-conseil",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        }
+      ],
+      "scores": {
+        "outils": 33.3,
+        "json": 100.0,
+        "raisonnement": 0.0,
+        "consignes": 100.0,
+        "francais": 100.0,
+        "vitesse": 100.0,
+        "stabilite": null
+      },
+      "global": 65.0,
+      "perf": {
+        "gen_tok_s_median": 158.94,
+        "latence_s_median": 0.92,
+        "latence_s_p90": 3.28,
+        "latence_s_max": 3.81,
+        "appels": 14,
+        "thinking_chars": 0,
+        "outils_natifs": 0,
+        "outils_texte": 0
+      }
+    },
+    "mistral:latest": {
+      "cases": [
+        {
+          "categorie": "outils",
+          "id": "T-simple",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-meteo-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-vol-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-act-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-budget",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-none-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-none-3",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-absent",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "M-deux",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "json",
+          "id": "J-extraction",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "raisonnement",
+          "id": "R-budget",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "attendu 220, nombres trouves : [115.0]"
+        },
+        {
+          "categorie": "raisonnement",
+          "id": "R-contrainte",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "attendu 2, nombres trouves : [3.0, 3.0]"
+        },
+        {
+          "categorie": "consignes",
+          "id": "C-oui-non",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "francais",
+          "id": "F-conseil",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        }
+      ],
+      "scores": {
+        "outils": 100.0,
+        "json": 100.0,
+        "raisonnement": 0.0,
+        "consignes": 100.0,
+        "francais": 100.0,
+        "vitesse": 36.7,
+        "stabilite": null
+      },
+      "global": 69.2,
+      "perf": {
+        "gen_tok_s_median": 8.9,
+        "latence_s_median": 5.87,
+        "latence_s_p90": 43.49,
+        "latence_s_max": 45.14,
+        "appels": 14,
+        "thinking_chars": 0,
+        "outils_natifs": 6,
+        "outils_texte": 0
+      }
+    },
+    "qwen2.5:7b": {
+      "cases": [
+        {
+          "categorie": "outils",
+          "id": "T-simple",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-meteo-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-vol-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-act-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-budget",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-none-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-none-3",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-absent",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "M-deux",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "outils obtenus : ['weather']"
+        },
+        {
+          "categorie": "json",
+          "id": "J-extraction",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "raisonnement",
+          "id": "R-budget",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "attendu 220, nombres trouves : [390.0]"
+        },
+        {
+          "categorie": "raisonnement",
+          "id": "R-contrainte",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "consignes",
+          "id": "C-oui-non",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "francais",
+          "id": "F-conseil",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        }
+      ],
+      "scores": {
+        "outils": 88.9,
+        "json": 100.0,
+        "raisonnement": 50.0,
+        "consignes": 100.0,
+        "francais": 100.0,
+        "vitesse": 31.2,
+        "stabilite": null
+      },
+      "global": 72.0,
+      "perf": {
+        "gen_tok_s_median": 8.0,
+        "latence_s_median": 7.08,
+        "latence_s_p90": 26.13,
+        "latence_s_max": 59.03,
+        "appels": 14,
+        "thinking_chars": 0,
+        "outils_natifs": 6,
+        "outils_texte": 0
+      }
+    },
+    "llama3.1:8b": {
+      "cases": [
+        {
+          "categorie": "outils",
+          "id": "T-simple",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "attendu weather, obtenu Obtenir la meteo et les previsions d'une ville a une date donnee"
+        },
+        {
+          "categorie": "outils",
+          "id": "T-meteo-1",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "attendu weather, obtenu Obtenir la meteo et les previsions d'une ville a une date donnee"
+        },
+        {
+          "categorie": "outils",
+          "id": "T-vol-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-act-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-budget",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-none-1",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "a appele activity_search alors qu'aucun outil n'etait attendu"
+        },
+        {
+          "categorie": "outils",
+          "id": "T-none-3",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "a appele Obtenir la meteo et les previsions d'une ville a une date donnee alors qu'aucun outil n'etait attendu"
+        },
+        {
+          "categorie": "outils",
+          "id": "T-absent",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "a appele github_commit alors qu'aucun outil n'etait attendu"
+        },
+        {
+          "categorie": "outils",
+          "id": "M-deux",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "outils obtenus : [\"Obtenir la meteo et les previsions d'une ville a une date donnee\"]"
+        },
+        {
+          "categorie": "json",
+          "id": "J-extraction",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "raisonnement",
+          "id": "R-budget",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "raisonnement",
+          "id": "R-contrainte",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "consignes",
+          "id": "C-oui-non",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "francais",
+          "id": "F-conseil",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        }
+      ],
+      "scores": {
+        "outils": 33.3,
+        "json": 100.0,
+        "raisonnement": 100.0,
+        "consignes": 100.0,
+        "francais": 100.0,
+        "vitesse": 36.9,
+        "stabilite": null
+      },
+      "global": 64.2,
+      "perf": {
+        "gen_tok_s_median": 7.55,
+        "latence_s_median": 5.46,
+        "latence_s_p90": 12.37,
+        "latence_s_max": 45.37,
+        "appels": 14,
+        "thinking_chars": 0,
+        "outils_natifs": 5,
+        "outils_texte": 4
+      }
+    },
+    "mistral-nemo:12b": {
+      "cases": [
+        {
+          "categorie": "outils",
+          "id": "T-simple",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-meteo-1",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "attendu weather, obtenu None"
+        },
+        {
+          "categorie": "outils",
+          "id": "T-vol-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-act-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-budget",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-none-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-none-3",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-absent",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "M-deux",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "outils obtenus : ['weather']"
+        },
+        {
+          "categorie": "json",
+          "id": "J-extraction",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "raisonnement",
+          "id": "R-budget",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "raisonnement",
+          "id": "R-contrainte",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "consignes",
+          "id": "C-oui-non",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "francais",
+          "id": "F-conseil",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        }
+      ],
+      "scores": {
+        "outils": 77.8,
+        "json": 100.0,
+        "raisonnement": 100.0,
+        "consignes": 100.0,
+        "francais": 100.0,
+        "vitesse": 17.7,
+        "stabilite": null
+      },
+      "global": 72.8,
+      "perf": {
+        "gen_tok_s_median": 3.91,
+        "latence_s_median": 11.68,
+        "latence_s_p90": 35.07,
+        "latence_s_max": 82.81,
+        "appels": 14,
+        "thinking_chars": 0,
+        "outils_natifs": 4,
+        "outils_texte": 1
+      }
+    },
+    "qwen3:8b (nothink)": {
+      "cases": [
+        {
+          "categorie": "outils",
+          "id": "T-simple",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-meteo-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-vol-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-act-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-budget",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-none-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-none-3",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-absent",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "M-deux",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "json",
+          "id": "J-extraction",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "raisonnement",
+          "id": "R-budget",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "raisonnement",
+          "id": "R-contrainte",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "consignes",
+          "id": "C-oui-non",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "francais",
+          "id": "F-conseil",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        }
+      ],
+      "scores": {
+        "outils": 100.0,
+        "json": 100.0,
+        "raisonnement": 100.0,
+        "consignes": 100.0,
+        "francais": 100.0,
+        "vitesse": 31.8,
+        "stabilite": null
+      },
+      "global": 83.0,
+      "perf": {
+        "gen_tok_s_median": 6.91,
+        "latence_s_median": 6.48,
+        "latence_s_p90": 28.38,
+        "latence_s_max": 50.08,
+        "appels": 14,
+        "thinking_chars": 0,
+        "outils_natifs": 6,
+        "outils_texte": 0
+      }
+    },
+    "qwen3:8b": {
+      "cases": [
+        {
+          "categorie": "outils",
+          "id": "T-simple",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-meteo-1",
+          "reussites": 0,
+          "essais": 1,
+          "taux": 0.0,
+          "pourquoi": "ReadTimeout: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=300)"
+        },
+        {
+          "categorie": "outils",
+          "id": "T-vol-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-act-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-budget",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-none-1",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-none-3",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "T-absent",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "outils",
+          "id": "M-deux",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "json",
+          "id": "J-extraction",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "raisonnement",
+          "id": "R-budget",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "raisonnement",
+          "id": "R-contrainte",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "consignes",
+          "id": "C-oui-non",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        },
+        {
+          "categorie": "francais",
+          "id": "F-conseil",
+          "reussites": 1,
+          "essais": 1,
+          "taux": 1.0,
+          "pourquoi": ""
+        }
+      ],
+      "scores": {
+        "outils": 88.9,
+        "json": 100.0,
+        "raisonnement": 100.0,
+        "consignes": 100.0,
+        "francais": 100.0,
+        "vitesse": 12.9,
+        "stabilite": null
+      },
+      "global": 74.9,
+      "perf": {
+        "gen_tok_s_median": 6.79,
+        "latence_s_median": 34.33,
+        "latence_s_p90": 148.55,
+        "latence_s_max": 300.1,
+        "appels": 14,
+        "thinking_chars": 8396,
+        "outils_natifs": 5,
+        "outils_texte": 0
+      }
+    }
+  }
+}

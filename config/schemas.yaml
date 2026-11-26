@@ -1,0 +1,48 @@
+schemas:
+
+  personal_information:
+    type: object
+    properties:
+      personal_information:
+        type: array
+        items:
+          type: object
+          properties:
+            type:
+              type: string
+              enum:
+                - FIRST_NAME
+                - LAST_NAME
+                - EMAIL
+                - PHONE_NUMBER
+                - POSTAL_ADDRESS
+                - DATE_OF_BIRTH
+                - PASSPORT_NUMBER
+                - CREDIT_CARD
+                - BANK_ACCOUNT
+                - IP_ADDRESS
+                - OTHER
+            value:
+              type: string
+          required:
+            - type
+            - value
+          additionalProperties: false
+    required:
+      - personal_information
+    additionalProperties: false
+
+  message_scope:
+    type: object
+    properties:
+      classification:
+        type: string
+        enum:
+          - IN_SCOPE
+          - OUT_OF_SCOPE
+          - AMBIGUOUS
+          - CONTEXT_AMBIGUOUS
+          - INJECTION
+    required:
+      - classification
+    additionalProperties: false

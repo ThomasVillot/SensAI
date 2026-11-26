@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+logs/
+.env
+sessions/
+shares/
+data/
+.web_cache*

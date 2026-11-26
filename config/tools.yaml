@@ -1,0 +1,588 @@
+tools:
+
+  weather:
+    type: function
+    function:
+      name: weather
+      description: "Renvoie la météo d'une ville dans une période donnée."
+      parameters:
+        type: object
+        properties:
+          city:
+            type: string
+            description: "Nom de la ville"
+          
+          now:
+            type: boolean
+            description: "True si la météo est demandé en temps réel, false sinon"
+
+          start_date:
+            type: string
+            description: "Date de début, format YYYY-MM-DD"
+
+          end_date:
+            type: string
+            description: "Date de fin, format YYYY-MM-DD"
+
+        required:
+          - city
+  
+
+  search_activities:
+    type: function
+    function:
+      name: search_activities
+      description: "Recherche les activitées a faire dans une ville à un certain mois de l'année. Les lieux refusés par l'utilisateur sont retirés des résultats et signalés par une note."
+      parameters:
+        type: object
+        properties:
+          city:
+            type: string
+            description: "Nom de la ville"
+          
+          month:
+            type: string
+            description: "Mois de l'année, format string. Ex 'janvier'"
+          
+          preferences:
+            type: string
+            description: "Ce que l'utilisateur aime, en mots-clés positifs et en anglais (ex. 'adventure sports, adrenaline, outdoor'). Jamais de négation : traduis un goût négatif par son contraire. Omettre si l'utilisateur n'a rien dit."
+        
+        required:
+          - city
+          - month
+
+
+  search_flights:
+    type: function
+    function:
+      name: search_flights
+      description: Recherche les vols aller-retour les moins cher.
+      parameters:
+        type: object
+        properties:
+          airport_departure_id:
+            type: string
+            description: >
+              Identifiant IATA de l'aéroport de départ, composé exactement de
+              3 lettres majuscules (exemple : "CDG" pour Paris-Charles-de-Gaulle,
+              "BRU" pour Bruxelles-Zaventem).
+              Utilise un code IATA d'aéroport valide et existant.
+              N'invente jamais de code et n'ajoute pas de préfixe ou de suffixe.
+              Si seul le nom d'une ville est fourni, identifie d'abord un aéroport
+              correspondant et utilise son code IATA.
+
+          airport_arrival_id:
+            type: string
+            description: >
+              Identifiant IATA de l'aéroport d'arrivée, composé exactement de
+              3 lettres majuscules (exemple : "MAD" pour Madrid-Barajas,
+              "FCO" pour Rome-Fiumicino).
+              Utilise un code IATA d'aéroport valide et existant.
+              N'invente jamais de code et n'ajoute pas de préfixe ou de suffixe.
+              Si seul le nom d'une ville est fourni, identifie d'abord un aéroport
+              correspondant et utilise son code IATA.
+              Le code d'arrivée doit être différent du code de départ.
+          
+          outbound_date:
+            type: string
+            description: "La date de début du voyage, format YYYY-MM-DD"
+          
+          currency:
+            type: string
+            description: "Le type de monnaie pour le prix des vols, exemple EUR, USD, JPY, ..."
+
+          round_trip:
+            type: boolean
+            description: "True si le vol recherché est aller-retour, false sinon"
+          
+          sort_by:
+            type: "string"
+            description: "Trier les vols, défaut: 'top_flights'"
+            enum:
+              - top_flights
+              - price
+              - departure_time
+              - arrival_time
+              - duration
+    
+          return_date:
+            type: string
+            description: "La date de fin du voyage, format YYYY-MM-DD"
+          
+          budget:
+            type: integer
+            description: "Le budget maximum des vols"
+          
+          layover:
+            type: string
+            description: "Définit la préférence de l'utilisateur concernant les escales, défaut: 'any'"
+            enum:
+              - any
+              - nonstop
+              - one_or_fewer
+          
+          travel_class:
+            type: string
+            description: "Classe de voyage, défaut: 'economy'"
+            enum:
+              - economy
+              - premium
+              - business
+              - first
+          
+          adults:
+            type: "integer"
+            description: "Nombre d'adultes, défaut: 1"
+          
+          children:
+            type: "integer"
+            description: "Nombre d'enfants ayant leur propre siège, défaut: 0"
+          
+          infants_in_seat:
+            type: "integer"
+            description: "Nombre de nourrissons voyageant sur leur propre siège, défaut: 0"
+          
+          infants_on_lap:
+            type: "integer"
+            description: "Nombre de nourrissons voyageant sur les genoux d'un adulte, défaut: 0"
+
+        required:
+          - airport_departure_id
+          - airport_arrival_id
+          - outbound_date
+          - currency
+          - round_trip
+          - sort_by
+
+        allOf:
+          - if:
+              properties:
+                round_trip:
+                  const: true
+              required:
+                - round_trip
+            then:
+              required:
+                - return_date
+
+  search_housing:
+    type: function
+    function:
+      name: search_housing
+      description: Recherche des hébergements selon la destination, les dates et les préférences.
+      parameters:
+        type: object
+        properties:
+          destination:
+            type: string
+            description: "Ville, région ou lieu recherché, avec le pays si nécessaire (ex. Rome, Italy)."
+
+          check_in_date:
+            type: string
+            format: date
+            description: "Date d'arrivée, format YYYY-MM-DD."
+
+          check_out_date:
+            type: string
+            format: date
+            description: "Date de départ, format YYYY-MM-DD."
+
+          currency:
+            type: string
+            description: "Devise ISO 4217 (ex. EUR, USD, GBP)."
+
+          adults:
+            type: integer
+            minimum: 1
+            description: "Nombre d'adultes, défaut 2."
+
+          children:
+            type: integer
+            minimum: 0
+            description: "Nombre d'enfants, défaut 0."
+
+          children_ages:
+            type: array
+            items:
+              type: integer
+              minimum: 1
+              maximum: 17
+            description: "Âges des enfants dans l'ordre indiqué. Ne pas inventer ; omettre si inconnus."
+
+          min_price:
+            type: integer
+            minimum: 0
+            description: "Prix minimum accepté."
+
+          max_price:
+            type: integer
+            minimum: 0
+            description: "Prix maximum accepté."
+
+          price_basis:
+            type: string
+            enum:
+              - total
+              - nightly
+            description: "Base du budget : total du séjour ou prix par nuit, défaut total."
+
+          min_rating:
+            type: number
+            minimum: 0
+            maximum: 5
+            description: "Note minimale des voyageurs sur 5. Omettre si non précisée ; distincte des étoiles."
+
+          min_hotel_class:
+            type: integer
+            minimum: 2
+            maximum: 5
+            description: "Nombre minimal d'étoiles, uniquement si demandé."
+
+          max_hotel_class:
+            type: integer
+            minimum: 2
+            maximum: 5
+            description: "Nombre maximal d'étoiles, uniquement si demandé."
+
+          property_types:
+            type: array
+            items:
+              type: string
+              enum:
+                - beach_hotels
+                - boutique_hotels
+                - hostels
+                - inns
+                - motels
+                - resorts
+                - spa_hotels
+                - bed_and_breakfasts
+                - apartment_hotels
+                - minshuku
+                - japanese_style_business_hotels
+                - ryokan
+                - other
+            description: "Types d'hébergement souhaités. Omettre si non précisés."
+
+          amenities:
+            type: array
+            items:
+              type: string
+              enum:
+                - free_parking
+                - parking
+                - indoor_pool
+                - outdoor_pool
+                - pool
+                - fitness_center
+                - restaurant
+                - free_breakfast
+                - spa
+                - beach_access
+                - child_friendly
+                - bar
+                - pet_friendly
+                - room_service
+                - free_wifi
+                - air_conditioned
+                - all_inclusive_available
+                - wheelchair_accessible
+                - ev_charger
+            description: "Équipements souhaités (ex. Wi-Fi, piscine, parking). Omettre si non précisés."
+
+          free_cancellation:
+            type: boolean
+            description: "true si l'annulation gratuite est exigée, sinon false."
+
+          special_offers:
+            type: boolean
+            description: "true si des promotions sont demandées, sinon false."
+
+          eco_certified:
+            type: boolean
+            description: "true si une certification écologique est souhaitée, sinon false."
+
+          vacation_rentals:
+            type: boolean
+            description: "true pour une location de vacances, false pour une recherche classique."
+
+          min_bedrooms:
+            type: integer
+            minimum: 0
+            description: "Nombre minimal de chambres ; uniquement pour les locations de vacances si précisé."
+
+          min_bathrooms:
+            type: integer
+            minimum: 0
+            description: "Nombre minimal de salles de bains ; uniquement pour les locations de vacances si précisé."
+
+          sort_by:
+            type: string
+            enum:
+              - relevance
+              - price
+              - rating
+              - most_reviewed
+            description: "Classement des résultats : pertinence, prix, note ou nombre d'avis."
+
+        required:
+          - destination
+          - check_in_date
+          - check_out_date
+          - currency
+  
+
+  trip_save:
+    type: function
+    function:
+      name: trip_save
+      description: "Enregistre ou met à jour le voyage en cours (destination, dates, budget, devise, voyageurs). À appeler dès que l'utilisateur donne ou change l'une de ces informations. Un voyage déjà enregistré est mis à jour, jamais dupliqué : n'envoie alors que le champ qui change. Ne renseigne que ce que l'utilisateur a réellement dit : n'invente aucune valeur. Une destination différente sur un voyage qui a déjà des dépenses ou des lieux est refusée : utilise new_trip."
+      parameters:
+        type: object
+        properties:
+          destination:
+            type: string
+            description: "Ville ou région du voyage. Obligatoire pour créer le voyage."
+
+          start_date:
+            type: string
+            description: "Date de départ, format YYYY-MM-DD, dans le futur."
+
+          end_date:
+            type: string
+            description: "Date de retour, format YYYY-MM-DD, après la date de départ."
+
+          budget:
+            type: number
+            description: "Budget total du voyage, strictement positif, deux décimales au plus."
+
+          currency:
+            type: string
+            description: "Devise du voyage, code ISO 4217 à 3 lettres (ex. EUR). Obligatoire pour créer le voyage."
+
+          travelers:
+            type: integer
+            description: "Nombre de voyageurs (entier). N'inclus ce champ que si l'utilisateur donne un nombre de personnes."
+
+          new_trip:
+            type: boolean
+            description: "true seulement si l'utilisateur annonce explicitement un autre voyage ; sinon omettre (le voyage en cours est mis à jour)."
+
+
+  trip_get:
+    type: function
+    function:
+      name: trip_get
+      description: "Renvoie tout ce qui est enregistré sur le voyage en cours : informations, dépenses, lieux retenus et refusés, budget. À appeler pour retrouver l'état du voyage, notamment au début d'une conversation."
+      parameters:
+        type: object
+        properties: {}
+
+
+  expense_save:
+    type: function
+    function:
+      name: expense_save
+      description: "Enregistre ou met à jour une dépense du voyage en cours (vol, hôtel, activité, repas...). La même dépense redite (même catégorie et même libellé) est mise à jour, jamais dupliquée. À appeler quand l'utilisateur annonce un prix, une réservation ou un paiement. Pour corriger un montant, réutilise le libellé exact de la dépense (visible dans trip_get) et n'envoie pas status. Exemple : « en fait le vol coûtait 480 euros » = expense_save(label=Vol Paris-Rome, category=transport, amount=480)."
+      parameters:
+        type: object
+        properties:
+          label:
+            type: string
+            description: "Libellé court de la dépense, ex. « Vol Paris-Rome »."
+
+          amount:
+            type: number
+            description: "Montant strictement positif, dans la devise du voyage, deux décimales au plus."
+
+          category:
+            type: string
+            description: "Catégorie de la dépense."
+            enum:
+              - transport
+              - lodging
+              - food
+              - activity
+              - other
+
+          status:
+            type: string
+            description: "Statut : booked = réservé (« j'ai réservé », « c'est réservé »), paid = déjà réglé (« j'ai payé », « c'est payé »), planned = simple estimation ou idée (« environ », « ça coûterait »). En cas de doute entre booked et paid, choisis booked. Pour corriger un montant, n'envoie pas ce champ : le statut actuel est alors conservé."
+            enum:
+              - planned
+              - booked
+              - paid
+
+          currency:
+            type: string
+            description: "Devise du montant, seulement si l'utilisateur la précise ; elle doit être celle du voyage (aucune conversion)."
+
+          distinct:
+            type: boolean
+            description: "true seulement pour confirmer qu'il s'agit bien d'une autre dépense que celle signalée comme proche dans une erreur précédente ; sinon omettre."
+
+        required:
+          - label
+          - amount
+          - category
+
+
+  expense_delete:
+    type: function
+    function:
+      name: expense_delete
+      description: "Supprime une dépense du voyage en cours, à partir de son libellé. À appeler quand l'utilisateur annule ou retire une dépense."
+      parameters:
+        type: object
+        properties:
+          label:
+            type: string
+            description: "Libellé de la dépense à supprimer."
+
+          category:
+            type: string
+            description: "Catégorie, seulement si le même libellé existe dans plusieurs catégories."
+            enum:
+              - transport
+              - lodging
+              - food
+              - activity
+              - other
+
+        required:
+          - label
+
+
+  place_save:
+    type: function
+    function:
+      name: place_save
+      description: "Note un lieu (activité, visite, restaurant, hébergement...) comme retenu ou refusé par l'utilisateur. À appeler dès qu'il donne un avis sur un lieu : « ça me plaît », « on garde », « je prends » = kept ; « non », « pas celui-là », « trop de monde », « trop cher » = rejected. Une phrase peut citer plusieurs lieux : un appel par lieu. Exemple : « le Colisée me plaît mais le Vatican non » = deux appels, place_save(name=Colisée, decision=kept) et place_save(name=Vatican, decision=rejected). La dernière décision l'emporte : un lieu retenu puis refusé n'est enregistré qu'une fois."
+      parameters:
+        type: object
+        properties:
+          name:
+            type: string
+            description: "Nom du lieu."
+
+          decision:
+            type: string
+            description: "kept = retenu (« ça me plaît », « on garde »), rejected = refusé (« non », « pas celui-là », « trop de monde »)."
+            enum:
+              - kept
+              - rejected
+
+          kind:
+            type: string
+            description: "Type de lieu, si connu ; conservé si omis lors d'une mise à jour."
+            enum:
+              - activity
+              - restaurant
+              - lodging
+              - sight
+              - other
+
+          reason:
+            type: string
+            description: "Raison donnée par l'utilisateur, en quelques mots (facultatif)."
+
+        required:
+          - name
+          - decision
+
+
+  budget_summary:
+    type: function
+    function:
+      name: budget_summary
+      description: "Calcule le budget du voyage en cours : budget total, dépenses réservées ou payées, dépenses prévues, ce qu'il reste. À appeler pour toute question sur l'argent restant ou dépensé ; ne jamais faire l'addition soi-même."
+      parameters:
+        type: object
+        properties: {}
+
+
+  document_edit:
+    type: function
+    function:
+      name: document_edit
+      description: "Met à jour UNE section du document d'itinéraire du voyage en cours (le livrable que l'utilisateur peut exporter). Un appel = une section, jamais le document entier : deux sections à modifier = deux appels. mode=append ajoute le texte à la fin de la section (pour noter un nouvel élément) ; mode=remove retire de la section l'élément qui contient le texte donné (pour retirer un élément : envoie seulement son nom, jamais le reste de la section) ; mode=replace remplace tout le texte de la section (pour corriger un élément : relis d'abord la section avec document_get, puis renvoie-la complète, modifiée). Le texte ne contient aucun titre (aucune ligne qui commence par #). À appeler quand l'utilisateur retient ou réserve quelque chose, même s'il ne donne aucun prix (en plus de expense_save ou place_save si besoin). Exemples : « on garde le Colisée » = place_save(name=Colisée, decision=kept) et document_edit(section=activities, mode=append, content=Colisée (retenu)) ; « on ne fait plus le Panthéon » = place_save(name=Panthéon, decision=rejected) et document_edit(section=activities, mode=remove, content=Panthéon)."
+      parameters:
+        type: object
+        properties:
+          section:
+            type: string
+            description: "Section à modifier : overview = aperçu du séjour (dates, rythme, ambiance) ; transport = vols, trains, déplacements ; lodging = hébergement ; activities = visites et activités retenues ; practical = météo, bagages, conseils pratiques."
+            enum:
+              - overview
+              - transport
+              - lodging
+              - activities
+              - practical
+
+          content:
+            type: string
+            description: "Texte à mettre dans cette section (court, sans titre Markdown, sans le texte des autres sections). Avec mode=append, seulement ce qu'il faut ajouter ; avec mode=remove, seulement l'élément à retirer (son nom) ; avec mode=replace, le texte complet de la section."
+
+          mode:
+            type: string
+            description: "append = ajouter à la fin de la section ; remove = retirer l'élément qui contient le texte donné ; replace = remplacer tout le texte de la section (valeur par défaut)."
+            enum:
+              - replace
+              - append
+              - remove
+
+        required:
+          - section
+          - content
+
+
+  document_get:
+    type: function
+    function:
+      name: document_get
+      description: "Relit le document d'itinéraire du voyage en cours : toutes les sections, ou seulement celle demandée. À appeler avant de remplacer ou de corriger une section dont tu ne vois pas le texte exact, et quand l'utilisateur demande ce que contient son itinéraire."
+      parameters:
+        type: object
+        properties:
+          section:
+            type: string
+            description: "Une seule section à relire ; omettre pour lire tout le document."
+            enum:
+              - overview
+              - transport
+              - lodging
+              - activities
+              - practical
+
+
+  web_search_basic:
+    type: function
+    function:
+      name: web_search_basic
+      description: "Recherche une information sur le web. Ne demande pas de recherche approfondie"
+      parameters:
+        type: object
+        properties:
+          query:
+            type: string
+            description: "Requête à rechercher"
+
+        required:
+          - query
+  
+
+  web_search_deep:
+    type: function
+    function:
+      name: web_search_deep
+      description: "Recherche une information sur le web. Fait une recherche approfondie"
+      parameters:
+        type: object
+        properties:
+          query:
+            type: string
+            description: "Requête à rechercher"
+
+        required:
+          - query

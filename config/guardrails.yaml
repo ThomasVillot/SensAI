@@ -1,0 +1,83 @@
+output_guardrails:
+  enabled: true
+
+  holdback_words: null
+
+  system_prompt_leak:
+    enabled: true
+    shingle_words: 10
+    message: "Réponse bloquée : l'assistant s'apprêtait à révéler ses instructions internes. Reformule ta demande de voyage."
+
+  malicious_content:
+    enabled: true
+    message: "Réponse bloquée : le contenu généré a été jugé dangereux ou inapproprié. Reformule ta demande de voyage."
+    categories:
+
+      jailbreak_success:
+        - "developer mode enabled"
+        - "developer mode activated"
+        - "mode developpeur active"
+        - "jailbreak successful"
+        - "jailbreak reussi"
+        - "i am now unrestricted"
+        - "je suis maintenant sans restriction"
+        - "dan mode"
+        - "je n'ai plus aucune restriction"
+        - "i have no restrictions"
+
+      dangerous_instructions:
+        - "fabriquer une bombe"
+        - "fabriquer des explosifs"
+        - "make a bomb"
+        - "build a bomb"
+        - "synthesize methamphetamine"
+        - "synthese de methamphetamine"
+        - "fabriquer de la drogue"
+        - "ransomware"
+        - "keylogger"
+
+      hate_and_insults:
+        - "sale race"
+        - "retourne dans ton pays"
+        - "go back to your country"
+        - "sale negre"
+        - "sale arabe"
+        - "sale juif"
+        - "ferme ta gueule"
+        - "va te faire foutre"
+        - "fuck you"
+        - "kill yourself"
+        - "suicide-toi"
+
+      code_injection:
+        - "<script"
+        - "javascript:"
+        - "onerror="
+        - "rm -rf /"
+        - "drop table"
+        - "union select"
+        - "re:\\bcurl\\b[^\\n]{0,80}\\|\\s*(?:ba)?sh\\b"
+        - "re:\\bwget\\b[^\\n]{0,80}\\|\\s*(?:ba)?sh\\b"
+
+guardrails:
+  input:
+    prompt_injection:
+      enabled: true
+      action: refuse
+
+    out_of_scope:
+      enabled: true
+      action: refuse
+
+    pii_detection:
+      enabled: true
+      action: anonymize
+
+  output:
+    inappropriate_content:
+      enabled: true
+      action: refuse
+
+    internal_information:
+      enabled: true
+      action: refuse
